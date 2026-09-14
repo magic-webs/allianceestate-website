@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import styles from './PropertyCategories.module.css';
 
 const categories = [
   {
@@ -26,19 +25,33 @@ const PropertyCategories = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="section bg-white">
-      <div className="container">
-        <div className={styles.header} ref={ref as React.RefObject<HTMLDivElement>}>
-          <h2 className="fade-up">Real Estate, Across Growth Sectors.</h2>
+    <section className="bg-white py-16 md:py-32">
+      <div className="mx-auto w-full max-w-page px-4 md:px-8">
+        <div
+          className="mx-auto mb-20 max-w-[700px] text-center"
+          ref={ref as React.RefObject<HTMLDivElement>}
+        >
+          <h2 className="fade-up text-[2.25rem] md:text-5xl">Real Estate, Across Growth Sectors.</h2>
         </div>
 
-        <div className={styles.grid}>
-          {categories.map((cat, index) => (
-            <div className={styles.card} key={index}>
-              <img src={cat.image} alt={cat.title} className={styles.cardImage} />
-              <div className={styles.cardOverlay}>
-                <h3 className={styles.cardTitle}>{cat.title}</h3>
-                <span className={styles.cardArrow}>&rarr;</span>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {categories.map((cat) => (
+            <div
+              className="group relative aspect-[16/10] cursor-pointer overflow-hidden"
+              key={cat.title}
+            >
+              <img
+                src={cat.image}
+                alt={cat.title}
+                className="h-full w-full object-cover transition-transform duration-600 ease-smooth group-hover:scale-105"
+              />
+              <div className="absolute inset-0 flex items-end justify-between bg-[linear-gradient(to_top,rgba(6,25,56,0.7)_0%,transparent_60%)] p-10 transition-all duration-400 ease-smooth group-hover:bg-[linear-gradient(to_top,rgba(6,25,56,0.9)_0%,rgba(6,25,56,0.5)_100%)]">
+                <h3 className="text-[1.35rem] font-bold text-white transition-all duration-400 ease-smooth md:text-[1.75rem]">
+                  {cat.title}
+                </h3>
+                <span className="-translate-x-5 text-[2rem] text-gold opacity-0 transition-all duration-400 ease-smooth group-hover:translate-x-0 group-hover:opacity-100">
+                  &rarr;
+                </span>
               </div>
             </div>
           ))}

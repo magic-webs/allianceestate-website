@@ -1,145 +1,129 @@
-:root {
-  --color-primary: #0B2A5B;
-  --color-secondary: #123E7A;
-  --color-gold: #C9A227;
-  --color-gold-light: #E0BE55;
-  --color-white: #FFFFFF;
-  --color-bg-light: #F5F7FA;
-  --color-text-dark: #111827;
-  --color-text-light: #64748B;
-  
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────
+   Design tokens — every value here becomes a
+   Tailwind utility (bg-gold, font-heading, …).
+   ───────────────────────────────────────────── */
+@theme {
+  /* Brand */
+  --color-primary: #0b2a5b;
+  --color-secondary: #123e7a;
+  --color-navy: #061938;
+  --color-gold: #c9a227;
+  --color-gold-light: #e0be55;
+  --color-gold-dark: #b28340;
+  --color-gold-deep: #a37520;
+  --color-gold-script: #a87e2c;
+
+  /* Neutrals */
+  --color-ink: #111827;
+  --color-muted: #64748b;
+  --color-surface: #f5f7fa;
+
+  /* Warm palette used by the contact section */
+  --color-cream: #f9f6f0;
+  --color-cream-field: #fdfaf5;
+  --color-cream-border: #e5ddd0;
+
+  /* Typography */
   --font-heading: var(--font-plus-jakarta-sans), sans-serif;
   --font-body: var(--font-inter), sans-serif;
+  --font-script: "Brush Script MT", cursive, serif;
 
-  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  --shadow-premium: 0 20px 40px rgba(11, 42, 91, 0.08);
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
+  /* Layout */
+  --container-page: 1440px;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  /* Motion + elevation */
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-premium: 0 20px 40px rgb(11 42 91 / 0.08);
+  --shadow-card: 0 4px 20px rgb(0 0 0 / 0.05);
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: var(--font-body);
-  color: var(--color-text-dark);
-  background-color: var(--color-white);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
+  --animate-slide-up-fade: slide-up-fade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-dropdown-in: dropdown-in 0.2s ease;
+  --animate-marker-in: marker-in 0.5s ease forwards;
+  --animate-marker-pulse: marker-pulse 2s ease-out infinite;
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--color-primary);
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-  font-family: var(--font-body);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Utilities */
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.section {
-  padding: 8rem 0;
-}
-
-@media (max-width: 768px) {
-  .section {
-    padding: 4rem 0;
+  @keyframes slide-up-fade {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  .container {
-    padding: 0 1rem;
+
+  /* Only `transform` here — the panel's horizontal centring comes from
+     Tailwind's `-translate-x-1/2`, which sets the separate `translate`
+     property, so the two compose instead of overwriting each other. */
+  @keyframes dropdown-in {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes marker-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes marker-pulse {
+    0% {
+      transform: translateY(-50%) scale(1);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(-50%) scale(2.5);
+      opacity: 0;
+    }
   }
 }
 
-/* Typography */
-.text-gold { color: var(--color-gold); }
-.text-white { color: var(--color-white); }
-.text-primary { color: var(--color-primary); }
-.text-light { color: var(--color-text-light); }
+@layer base {
+  html,
+  body {
+    @apply w-full overflow-x-hidden;
+  }
 
-.bg-primary { background-color: var(--color-primary); }
-.bg-light { background-color: var(--color-bg-light); }
-.bg-white { background-color: var(--color-white); }
-.bg-navy { background-color: #061938; }
+  body {
+    @apply bg-white font-body text-ink antialiased;
+    line-height: 1.6;
+  }
 
-/* Buttons */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2rem;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: var(--transition-smooth);
-  border-radius: 4px;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold leading-tight text-primary;
+  }
 
-.btn-primary {
-  background-color: var(--color-gold);
-  color: var(--color-white);
-}
-.btn-primary:hover {
-  background-color: var(--color-gold-light);
-  transform: translateY(-2px);
+  /* Preflight ships `cursor: default` on buttons; this site wants pointers. */
+  button:not(:disabled) {
+    @apply cursor-pointer;
+  }
 }
 
-.btn-secondary {
-  border: 1px solid var(--color-gold);
-  color: var(--color-gold);
-  background-color: transparent;
-}
-.btn-secondary:hover {
-  background-color: var(--color-gold);
-  color: var(--color-white);
-}
+@layer components {
+  /* Scroll-reveal primitive. An IntersectionObserver adds `.visible`
+     once the element enters the viewport — see hooks/useScrollReveal.ts.
+     Stagger it per element with Tailwind's `delay-*` utilities. */
+  .fade-up {
+    @apply translate-y-8 opacity-0 transition-all duration-500 ease-smooth;
+  }
 
-.btn-white {
-  background-color: var(--color-white);
-  color: var(--color-primary);
-}
-.btn-white:hover {
-  background-color: var(--color-bg-light);
-  transform: translateY(-2px);
-}
-
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: var(--transition-smooth);
-}
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
+  .fade-up.visible {
+    @apply translate-y-0 opacity-100;
+  }
 }

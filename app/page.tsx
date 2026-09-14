@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import CarouselSection from '../components/CarouselSection';

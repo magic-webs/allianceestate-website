@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import styles from './InvestmentProcess.module.css';
 
 const steps = [
   {
@@ -30,21 +29,27 @@ const InvestmentProcess = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="section bg-white" id="approach">
-      <div className="container">
-        <div className={styles.header} ref={ref as React.RefObject<HTMLDivElement>}>
-          <h2 className="fade-up">A Smarter Way to Invest.</h2>
+    <section className="bg-white py-16 md:py-32" id="approach">
+      <div className="mx-auto w-full max-w-page px-4 md:px-8">
+        <div
+          className="mx-auto mb-16 max-w-[700px] text-center md:mb-24"
+          ref={ref as React.RefObject<HTMLDivElement>}
+        >
+          <h2 className="fade-up text-[2.25rem] md:text-5xl">A Smarter Way to Invest.</h2>
         </div>
 
-        <div className={styles.timeline}>
-          <div className={styles.timelineLine}></div>
-          {steps.map((step, index) => (
-            <div className={styles.step} key={index}>
-              <div className={styles.stepCircle}>
-                <span>{step.number}</span>
+        <div className="relative grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-8">
+          <div className="absolute top-7 left-[10%] hidden h-0.5 w-4/5 bg-primary opacity-15 md:block" />
+
+          {steps.map((step) => (
+            <div className="relative text-center" key={step.number}>
+              <div className="relative z-2 mx-auto mb-8 flex h-14 w-14 items-center justify-center rounded-full border-2 border-gold bg-white">
+                <span className="font-heading text-base font-bold text-gold">{step.number}</span>
               </div>
-              <h3 className={styles.stepTitle}>{step.title}</h3>
-              <p className={styles.stepDescription}>{step.description}</p>
+              <h3 className="mb-4 text-2xl text-primary">{step.title}</h3>
+              <p className="mx-auto max-w-[250px] text-base leading-[1.6] text-muted">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>

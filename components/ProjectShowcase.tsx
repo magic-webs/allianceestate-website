@@ -2,7 +2,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import styles from './ProjectShowcase.module.css';
 
 const projects = [
   {
@@ -17,7 +16,7 @@ const projects = [
     name: 'Commerce Square',
     location: 'Sector 62, Noida',
     category: 'Commercial',
-    description: 'Grade-A commercial spaces in one of Noida\'s fastest-growing business corridors.',
+    description: "Grade-A commercial spaces in one of Noida's fastest-growing business corridors.",
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop',
     featured: false,
   },
@@ -31,48 +30,61 @@ const projects = [
   },
 ];
 
+const cardClass =
+  'group overflow-hidden border border-primary/6 bg-white transition-all duration-400 ease-smooth hover:shadow-premium';
+const categoryClass = 'mb-2 block text-xs font-semibold tracking-[1.5px] text-gold uppercase';
+const exploreClass =
+  'inline-flex items-center gap-2 font-semibold text-primary transition-all duration-400 ease-smooth hover:text-gold';
+const exploreArrowClass =
+  'inline-block transition-transform duration-400 ease-smooth group-hover:translate-x-[5px]';
+const imageClass =
+  'h-full w-full object-cover transition-transform duration-600 ease-smooth group-hover:scale-[1.03]';
+const imageOverlayClass =
+  'absolute bottom-0 left-0 h-[40%] w-full bg-[linear-gradient(to_top,rgba(0,0,0,0.2),transparent)]';
+
 const ProjectShowcase = () => {
   const ref = useScrollReveal();
+  const [featured, ...supporting] = projects;
 
   return (
-    <section className="section bg-light" id="projects">
-      <div className="container">
-        <div className={styles.header} ref={ref as React.RefObject<HTMLDivElement>}>
-          <h2 className="fade-up">Projects With Potential.</h2>
+    <section className="bg-surface py-16 md:py-32" id="projects">
+      <div className="mx-auto w-full max-w-page px-4 md:px-8">
+        <div className="mb-20 max-w-[700px]" ref={ref as React.RefObject<HTMLDivElement>}>
+          <h2 className="fade-up text-[2.25rem] md:text-5xl">Projects With Potential.</h2>
         </div>
 
-        <div className={styles.grid}>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.5fr_1fr]">
           {/* Featured project */}
-          <div className={`${styles.card} ${styles.featured}`}>
-            <div className={styles.imageWrapper}>
-              <img src={projects[0].image} alt={projects[0].name} className={styles.cardImage} />
-              <div className={styles.cardImageOverlay}></div>
+          <div className={`${cardClass} grid grid-rows-[1.2fr_auto]`}>
+            <div className="relative aspect-[16/10] overflow-hidden">
+              <img src={featured.image} alt={featured.name} className={imageClass} />
+              <div className={imageOverlayClass} />
             </div>
-            <div className={styles.cardContent}>
-              <span className={styles.category}>{projects[0].category}</span>
-              <h3 className={styles.projectName}>{projects[0].name}</h3>
-              <p className={styles.projectLocation}>{projects[0].location}</p>
-              <p className={styles.projectDescription}>{projects[0].description}</p>
-              <Link href="#" className={styles.exploreBtn}>
-                Explore Project <span>&rarr;</span>
+            <div className="p-8">
+              <span className={categoryClass}>{featured.category}</span>
+              <h3 className="mb-2 text-2xl text-primary">{featured.name}</h3>
+              <p className="mb-4 text-[0.95rem] text-muted">{featured.location}</p>
+              <p className="mb-6 text-base leading-[1.6] text-muted">{featured.description}</p>
+              <Link href="#" className={exploreClass}>
+                Explore Project <span className={exploreArrowClass}>&rarr;</span>
               </Link>
             </div>
           </div>
 
           {/* Supporting projects */}
-          <div className={styles.supporting}>
-            {projects.slice(1).map((project, index) => (
-              <div className={styles.card} key={index}>
-                <div className={styles.imageWrapper}>
-                  <img src={project.image} alt={project.name} className={styles.cardImage} />
-                  <div className={styles.cardImageOverlay}></div>
+          <div className="flex flex-col gap-8">
+            {supporting.map((project) => (
+              <div className={cardClass} key={project.name}>
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  <img src={project.image} alt={project.name} className={imageClass} />
+                  <div className={imageOverlayClass} />
                 </div>
-                <div className={styles.cardContent}>
-                  <span className={styles.category}>{project.category}</span>
-                  <h3 className={styles.projectName}>{project.name}</h3>
-                  <p className={styles.projectLocation}>{project.location}</p>
-                  <Link href="#" className={styles.exploreBtn}>
-                    Explore Project <span>&rarr;</span>
+                <div className="p-8">
+                  <span className={categoryClass}>{project.category}</span>
+                  <h3 className="mb-2 text-2xl text-primary">{project.name}</h3>
+                  <p className="mb-4 text-[0.95rem] text-muted">{project.location}</p>
+                  <Link href="#" className={exploreClass}>
+                    Explore Project <span className={exploreArrowClass}>&rarr;</span>
                   </Link>
                 </div>
               </div>

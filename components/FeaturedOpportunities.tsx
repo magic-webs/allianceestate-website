@@ -2,7 +2,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import styles from './FeaturedOpportunities.module.css';
 
 const opportunities = [
   {
@@ -16,7 +15,7 @@ const opportunities = [
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop',
     location: 'Cyber City, Gurugram',
     type: 'Commercial Office Space',
-    description: 'Premium Grade-A commercial spaces in one of India\'s most established business corridors.',
+    description: "Premium Grade-A commercial spaces in one of India's most established business corridors.",
     price: '₹ On Request',
   },
   {
@@ -32,34 +31,54 @@ const FeaturedOpportunities = () => {
   const headerRef = useScrollReveal();
 
   return (
-    <section className="section bg-white" id="opportunities">
-      <div className="container">
-        <div className={styles.header} ref={headerRef as React.RefObject<HTMLDivElement>}>
-          <h2 className="fade-up">Opportunities Worth Looking At</h2>
-          <p className="fade-up" style={{ animationDelay: '0.2s' }}>
+    <section className="bg-white py-16 md:py-32" id="opportunities">
+      <div className="mx-auto w-full max-w-page px-4 md:px-8">
+        <div
+          className="mx-auto mb-20 max-w-[700px] text-center"
+          ref={headerRef as React.RefObject<HTMLDivElement>}
+        >
+          <h2 className="fade-up mb-6 text-[2.25rem] md:text-5xl">Opportunities Worth Looking At</h2>
+          <p className="fade-up text-[1.25rem] text-muted delay-200">
             A focused selection of strategically positioned real-estate opportunities.
           </p>
         </div>
 
-        <div className={styles.grid}>
-          {opportunities.map((item, index) => (
-            <div className={styles.card} key={index} style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className={styles.imageWrapper}>
-                <img src={item.image} alt={item.location} className={styles.cardImage} />
-                <div className={styles.imageOverlay}></div>
+        <div className="mx-auto grid max-w-[600px] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+          {opportunities.map((item) => (
+            <div
+              className="group relative overflow-hidden border border-primary/8 bg-white transition-all duration-400 ease-smooth hover:-translate-y-2 hover:shadow-premium"
+              key={item.location}
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.location}
+                  className="h-full w-full object-cover transition-transform duration-600 ease-smooth group-hover:scale-[1.03]"
+                />
+                <div className="pointer-events-none absolute bottom-0 left-0 h-1/2 w-full bg-[linear-gradient(to_top,rgba(0,0,0,0.3),transparent)]" />
               </div>
-              <div className={styles.cardContent}>
-                <span className={styles.propertyType}>{item.type}</span>
-                <h3 className={styles.location}>{item.location}</h3>
-                <p className={styles.description}>{item.description}</p>
-                <div className={styles.cardFooter}>
-                  <span className={styles.price}>{item.price}</span>
-                  <Link href="#" className={styles.exploreLink}>
-                    Explore Opportunity <span className={styles.linkArrow}>&rarr;</span>
+
+              <div className="p-8">
+                <span className="mb-3 block text-[0.8rem] font-semibold tracking-[1.5px] text-gold uppercase">
+                  {item.type}
+                </span>
+                <h3 className="mb-4 text-2xl text-primary">{item.location}</h3>
+                <p className="mb-8 text-base leading-[1.6] text-muted">{item.description}</p>
+                <div className="flex items-center justify-between border-t border-primary/8 pt-6">
+                  <span className="font-heading text-[1.1rem] font-bold text-primary">{item.price}</span>
+                  <Link
+                    href="#"
+                    className="inline-flex items-center gap-2 text-[0.95rem] font-semibold text-primary transition-all duration-400 ease-smooth hover:text-gold"
+                  >
+                    Explore Opportunity
+                    <span className="inline-block transition-transform duration-400 ease-smooth group-hover:translate-x-[5px]">
+                      &rarr;
+                    </span>
                   </Link>
                 </div>
               </div>
-              <div className={styles.goldLine}></div>
+
+              <div className="absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0 bg-gold transition-transform duration-400 ease-smooth group-hover:scale-x-100" />
             </div>
           ))}
         </div>

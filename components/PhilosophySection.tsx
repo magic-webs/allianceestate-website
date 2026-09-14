@@ -1,7 +1,6 @@
 'use client';
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import styles from './PhilosophySection.module.css';
 
 const stats = [
   { target: 15, suffix: '+', label: 'Years of Experience' },
@@ -70,32 +69,42 @@ const PhilosophySection = () => {
   }, []);
 
   return (
-    <section className="section bg-white" id="about">
-      <div className="container">
-        <div className={styles.splitLayout}>
-          <div className={styles.leftCol}>
-            <h2 className={`fade-up ${styles.statement}`}>
-              Property is physical.<br />
+    <section className="bg-white py-16 md:py-32" id="about">
+      <div className="mx-auto w-full max-w-page px-4 md:px-8">
+        <div className="mb-16 grid grid-cols-1 items-center gap-8 md:mb-32 md:grid-cols-2 md:gap-16">
+          <div>
+            <h2 className="fade-up text-[2.25rem] leading-tight text-primary md:text-[2.5rem] lg:text-[3.5rem]">
+              Property is physical.
+              <br />
               Opportunity is strategic.
             </h2>
           </div>
-          <div className={styles.rightCol}>
-            <p className={`fade-up ${styles.description}`} style={{ animationDelay: '0.2s' }}>
+          <div>
+            <p className="fade-up mb-8 max-w-[500px] text-[1.25rem] leading-[1.6] text-ink delay-200 lg:text-2xl">
               We help investors identify real-estate opportunities where infrastructure, economic growth and future demand come together. Our focus is on long-term value creation.
             </p>
-            <Link href="#approach" className={`fade-up ${styles.link}`} style={{ animationDelay: '0.4s' }}>
+            <Link
+              href="#approach"
+              className="fade-up relative inline-flex items-center text-[1.125rem] font-semibold text-primary delay-400 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-gold after:transition-all after:duration-400 after:ease-smooth after:content-[''] hover:text-gold hover:after:w-full"
+            >
               Discover Our Approach &rarr;
             </Link>
           </div>
         </div>
 
-        <div className={styles.statsContainer} ref={statsRef}>
-          {stats.map((stat, index) => (
-            <div className={styles.statItem} key={index}>
-              <div className={styles.statNumber}>
+        <div
+          className="grid grid-cols-1 gap-8 border-t border-primary/10 pt-12 md:grid-cols-2 md:gap-y-12 lg:grid-cols-4 lg:pt-16"
+          ref={statsRef}
+        >
+          {stats.map((stat) => (
+            <div
+              className="relative flex flex-col items-center px-4 py-8 text-center before:absolute before:top-0 before:left-1/2 before:h-[3px] before:w-10 before:-translate-x-1/2 before:bg-gold before:opacity-40 before:content-['']"
+              key={stat.label}
+            >
+              <div className="mb-4 font-heading text-[3rem] leading-none font-bold text-primary lg:text-[4.5rem]">
                 <CountUpNumber target={stat.target} suffix={stat.suffix} started={countStarted} />
               </div>
-              <div className={styles.statLabel}>{stat.label}</div>
+              <div className="text-[1.05rem] font-medium tracking-[0.3px] text-muted">{stat.label}</div>
             </div>
           ))}
         </div>

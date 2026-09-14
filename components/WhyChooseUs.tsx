@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import styles from './WhyChooseUs.module.css';
 
 const features = [
   {
@@ -30,24 +29,29 @@ const WhyChooseUs = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className={styles.section}>
-      <div className="container">
-        <div className={styles.header} ref={ref as React.RefObject<HTMLDivElement>}>
-          <h2 className="fade-up">
-            Not Just Property.<br />Perspective.
+    <section className="bg-primary py-20 md:py-32">
+      <div className="mx-auto w-full max-w-page px-4 md:px-8">
+        <div
+          className="mx-auto mb-16 max-w-[700px] text-center md:mb-24"
+          ref={ref as React.RefObject<HTMLDivElement>}
+        >
+          <h2 className="fade-up mb-6 text-[2.5rem] text-white lg:text-[3.5rem]">
+            Not Just Property.
+            <br />
+            Perspective.
           </h2>
-          <p className="fade-up" style={{ animationDelay: '0.2s' }}>
+          <p className="fade-up text-[1.25rem] leading-[1.6] text-slate-400 delay-200">
             We bring together market intelligence, strategic thinking and operational expertise to help investors make informed real-estate decisions.
           </p>
         </div>
 
-        <div className={styles.grid}>
-          {features.map((feature, index) => (
-            <div className={styles.featureItem} key={index} style={{ animationDelay: `${index * 0.15}s` }}>
-              <div className={styles.featureNumber}>{feature.number}</div>
-              <div className={styles.featureLine}></div>
-              <h3 className={styles.featureTitle}>{feature.title}</h3>
-              <p className={styles.featureDescription}>{feature.description}</p>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-4 lg:gap-8">
+          {features.map((feature) => (
+            <div className="p-8" key={feature.number}>
+              <div className="mb-6 font-heading text-[1.25rem] font-bold text-gold">{feature.number}</div>
+              <div className="mb-6 h-px w-10 bg-gold opacity-50" />
+              <h3 className="mb-4 text-[1.35rem] text-white">{feature.title}</h3>
+              <p className="text-base leading-[1.6] text-slate-400">{feature.description}</p>
             </div>
           ))}
         </div>
