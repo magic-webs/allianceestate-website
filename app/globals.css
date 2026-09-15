@@ -127,3 +127,22 @@
     @apply translate-y-0 opacity-100;
   }
 }
+
+/* ── Mobile-specific fixes ─────────────────────────────────────────── */
+@layer utilities {
+  /* Prevent any element from causing horizontal overflow */
+  * {
+    min-width: 0;
+  }
+}
+
+/* Reduce contact card internal padding on very small screens */
+@media (max-width: 480px) {
+  .rounded-2xl.bg-slate-800\/60 {
+    padding: 1.25rem;
+  }
+  .rounded-\[20px\].bg-white,
+  .rounded-\[16px\].bg-white {
+    padding: 1rem;
+  }
+}

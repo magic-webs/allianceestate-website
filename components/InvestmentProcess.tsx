@@ -29,16 +29,16 @@ const InvestmentProcess = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="bg-white py-16 md:py-32" id="approach">
+    <section className="bg-white py-12 md:py-32" id="approach">
       <div className="mx-auto w-full max-w-page px-4 md:px-8">
         <div
-          className="mx-auto mb-16 max-w-[700px] text-center md:mb-24"
+          className="mx-auto mb-12 max-w-[700px] text-center md:mb-24"
           ref={ref as React.RefObject<HTMLDivElement>}
         >
-          <h2 className="fade-up text-[2.25rem] md:text-5xl">A Smarter Way to Invest.</h2>
+          <h2 className="fade-up text-[1.75rem] sm:text-[2.25rem] md:text-5xl">A Smarter Way to Invest.</h2>
         </div>
 
-        <div className="relative grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-8">
+        <div className="relative grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-8">
           <div className="absolute top-7 left-[10%] hidden h-0.5 w-4/5 bg-primary opacity-15 md:block" />
 
           {steps.map((step) => (

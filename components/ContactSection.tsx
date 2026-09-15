@@ -33,7 +33,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden py-12 md:py-24 bg-slate-950 text-white" id="contact">
+    <section className="relative z-20 overflow-hidden py-12 md:py-24 bg-slate-950 text-white" id="contact">
       {/* ── Full Container Background Image ── */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img

@@ -16,7 +16,7 @@ const LocationIntelligence = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="relative flex min-h-[500px] items-center overflow-hidden md:min-h-[600px]">
+    <section className="sticky top-0 z-10 flex min-h-[500px] items-center overflow-hidden md:min-h-[600px]">
       <div className="absolute top-0 left-0 z-1 h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2000&auto=format&fit=crop"

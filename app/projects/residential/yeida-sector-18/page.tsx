@@ -13,20 +13,20 @@ export default function Sector18Page() {
       <Navbar />
       <main className="bg-slate-900 text-white min-h-screen pt-28">
         {/* Banner */}
-        <section className="relative px-4 py-16 md:py-24 bg-gradient-to-b from-primary to-slate-900 overflow-hidden">
-          <div className="mx-auto max-w-page relative z-10 px-4 md:px-8">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs tracking-wider text-gold uppercase">
+        <section className="relative px-4 py-12 md:py-24 bg-gradient-to-b from-primary to-slate-900 overflow-hidden">
+          <div className="mx-auto max-w-page relative z-10 px-0 md:px-4">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[0.65rem] tracking-wider text-gold uppercase md:mb-4 md:px-4 md:py-1.5 md:text-xs">
               <Link href="/projects/residential" className="hover:underline">Residential Plots</Link>
               <span>/</span>
               <span>YEIDA Sector 18</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-heading mb-4 text-white">
+            <h1 className="text-[1.8rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-3 text-white leading-tight md:mb-4">
               YEIDA Sector 18 Residential &amp; Commercial Plots
             </h1>
-            <p className="max-w-3xl text-lg text-slate-300 font-light leading-relaxed mb-8">
-              Invest in YEIDA’s premier high-street destination. Unmatched capital appreciation, direct connectivity to Jewar Airport, and immediate revenue potential.
+            <p className="max-w-3xl text-base text-slate-300 font-light leading-relaxed mb-6 md:text-lg md:mb-8">
+              Invest in YEIDA's premier high-street destination. Unmatched capital appreciation, direct connectivity to Jewar Airport, and immediate revenue potential.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4">
               <Link href="#contact" className={btnPrimary}>
                 Inquire Plot Rates
               </Link>
@@ -38,9 +38,9 @@ export default function Sector18Page() {
         </section>
 
         {/* Overview & Key Highlights */}
-        <section className="py-16 px-4 md:px-8">
-          <div className="mx-auto max-w-page grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[380px] rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
+        <section className="py-12 px-4 md:py-16 md:px-8">
+          <div className="mx-auto max-w-page grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="relative h-[240px] sm:h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
               <Image
                 src="/Sector-18.png"
                 alt="YEIDA Sector 18 Location"
@@ -69,10 +69,10 @@ export default function Sector18Page() {
         </section>
 
         {/* Plot Options */}
-        <section className="py-12 bg-slate-800/40 border-y border-white/5 px-4 md:px-8">
+        <section className="py-10 bg-slate-800/40 border-y border-white/5 px-4 md:py-12 md:px-8">
           <div className="mx-auto max-w-page">
-            <h2 className="text-2xl font-bold text-white mb-8 text-center">Available Plot Configurations - Sector 18</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <h2 className="text-xl font-bold text-white mb-6 text-center md:text-2xl md:mb-8">Available Plot Configurations - Sector 18</h2>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6">
               <div className="p-6 rounded-2xl bg-slate-900 border border-gold/20 text-center">
                 <div className="text-gold font-bold text-xl mb-2">100 - 200 Sq. Yds.</div>
                 <p className="text-slate-300 text-sm mb-4">Ideal for boutique offices & luxury personal spaces.</p>

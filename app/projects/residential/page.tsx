@@ -43,7 +43,7 @@ export default function ResidentialPlotsPage() {
       <Navbar />
       <main className="bg-slate-900 text-white min-h-screen">
         {/* Banner */}
-        <section className="relative px-4 pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
+        <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
               src="/Residential-plot.jpeg"
@@ -52,26 +52,26 @@ export default function ResidentialPlotsPage() {
               className="object-cover"
             />
           </div>
-          <div className="mx-auto max-w-page px-4 md:px-8 relative z-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs tracking-wider text-gold uppercase">
+          <div className="mx-auto max-w-page px-0 md:px-4 relative z-10">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[0.65rem] tracking-wider text-gold uppercase md:mb-4 md:px-4 md:py-1.5 md:text-xs">
               <span>Projects Portfolio</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 text-white">
+            <h1 className="text-[1.9rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-4 text-white leading-tight">
               Prime Residential Plots in Noida
             </h1>
-            <p className="max-w-3xl text-lg text-slate-300 font-light leading-relaxed mb-8">
-              Explore freehold residential land in Noida’s most sought-after sectors. Fully authority-approved plots with immediate registry and high ROI potential.
+            <p className="max-w-3xl text-base text-slate-300 font-light leading-relaxed mb-6 md:text-lg md:mb-8">
+              Explore freehold residential land in Noida's most sought-after sectors. Fully authority-approved plots with immediate registry and high ROI potential.
             </p>
           </div>
         </section>
 
         {/* Sectors Grid */}
-        <section className="py-16 px-4 md:px-8">
+        <section className="py-12 px-4 md:py-16 md:px-8">
           <div className="mx-auto max-w-page">
-            <h2 className="text-3xl font-bold text-white mb-8 border-b border-gold/20 pb-4">
+            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gold/20 pb-4 md:text-3xl md:mb-8">
               Featured Residential Sectors
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
               {residentialSectors.map((sector) => (
                 <div
                   key={sector.name}

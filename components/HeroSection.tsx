@@ -159,14 +159,14 @@ const HeroSection = () => {
           >
             <button
               onClick={handlePrev}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-transparent text-white transition-all hover:-translate-y-0.5 hover:border-white hover:bg-white/10 md:h-12 md:w-12"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/70 bg-transparent text-gold transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold/10 md:h-12 md:w-12"
               aria-label="Previous slide"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
             </button>
             <button
               onClick={handleNext}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-transparent text-white transition-all hover:-translate-y-0.5 hover:border-white hover:bg-white/10 md:h-12 md:w-12"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--color-gold),var(--color-gold-dark))] text-white shadow-[0_4px_10px_rgba(201,162,39,0.4)] transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(201,162,39,0.5)] md:h-12 md:w-12"
               aria-label="Next slide"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>

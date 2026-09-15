@@ -33,7 +33,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="bg-white py-10 md:py-16">
+    <section className="relative z-20 bg-white py-10 md:py-16">
       <div className="mx-auto w-full max-w-page px-4 md:px-8">
         <div
           className="mx-auto mb-10 max-w-[700px] text-center"

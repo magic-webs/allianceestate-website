@@ -8,7 +8,7 @@ const FinalCTA = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="relative flex min-h-[400px] items-center overflow-hidden" id="contact">
+    <section className="relative z-20 flex min-h-[400px] items-center overflow-hidden" id="contact">
       <div className="absolute top-0 left-0 z-1 h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop"

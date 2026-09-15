@@ -13,20 +13,20 @@ export default function GaurYamunaCityPage() {
       <Navbar />
       <main className="bg-slate-900 text-white min-h-screen pt-28">
         {/* Banner */}
-        <section className="relative px-4 py-16 md:py-24 bg-gradient-to-b from-primary to-slate-900 overflow-hidden">
-          <div className="mx-auto max-w-page relative z-10 px-4 md:px-8">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs tracking-wider text-gold uppercase">
+        <section className="relative px-4 py-12 md:py-24 bg-gradient-to-b from-primary to-slate-900 overflow-hidden">
+          <div className="mx-auto max-w-page relative z-10 px-0 md:px-4">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[0.65rem] tracking-wider text-gold uppercase">
               <Link href="/projects/rera" className="hover:underline">RERA Projects</Link>
               <span>/</span>
               <span>Gaur Yamuna City</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-heading mb-4 text-white">
+            <h1 className="text-[1.8rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-3 text-white leading-tight md:mb-4">
               Gaur Yamuna City Mega Township
             </h1>
-            <p className="max-w-3xl text-lg text-slate-300 font-light leading-relaxed mb-8">
+            <p className="max-w-3xl text-base text-slate-300 font-light leading-relaxed mb-6 md:text-lg md:mb-8">
               A 250-acre master-planned mega township featuring lakefront plots, international schools, sports complexes, and commercial arcades.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4">
               <Link href="#contact" className={btnPrimary}>
                 Explore Available Plots
               </Link>
@@ -38,10 +38,10 @@ export default function GaurYamunaCityPage() {
         </section>
 
         {/* Features */}
-        <section className="py-16 px-4 md:px-8">
-          <div className="mx-auto max-w-page grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <section className="py-12 px-4 md:py-16 md:px-8">
+          <div className="mx-auto max-w-page grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Township Infrastructure</h2>
+              <h2 className="text-2xl font-bold text-white mb-5 md:text-3xl md:mb-6">Township Infrastructure</h2>
               <div className="space-y-4">
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
                   <h3 className="font-bold text-gold text-lg mb-1">🌊 9-Acre Yamuna Lakefront</h3>
@@ -57,7 +57,7 @@ export default function GaurYamunaCityPage() {
                 </div>
               </div>
             </div>
-            <div className="relative h-[380px] rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
+            <div className="relative h-[240px] sm:h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
               <Image
                 src="/Hero section banner.jpg"
                 alt="Gaur Yamuna City Masterplan"

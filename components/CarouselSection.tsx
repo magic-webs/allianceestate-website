@@ -95,10 +95,10 @@ const CarouselSection = () => {
   const restWords = titleParts.slice(1).join(' ');
 
   return (
-    <div ref={triggerRef} className="relative bg-[#fafbfc]" id="carousel" style={{ minHeight: `${slideData.length * 100}vh` }}>
-      <div ref={pinRef} className="flex min-h-screen w-full items-center justify-center overflow-hidden py-4">
+    <div ref={triggerRef} className="relative bg-[#fafbfc]" id="carousel">
+      <div ref={pinRef} className="flex min-h-screen w-full items-center justify-center overflow-hidden py-2 md:py-4">
         <div className="mx-auto flex w-full max-w-page justify-center px-3 md:px-8">
-          <div className="relative grid w-full max-w-page gap-4 overflow-hidden rounded-[16px] bg-white p-4 shadow-[0_20px_40px_rgba(0,0,0,0.05)] sm:p-6 md:rounded-[30px] md:gap-6 md:p-8 lg:grid-cols-[35%_65%] lg:p-10">
+          <div className="relative grid w-full max-w-page gap-4 overflow-hidden rounded-[16px] bg-white p-3 shadow-[0_20px_40px_rgba(0,0,0,0.05)] sm:p-6 md:rounded-[30px] md:gap-6 md:p-8 lg:grid-cols-[35%_65%] lg:p-10">
             <div className="z-10 flex flex-col justify-center lg:pr-6">
               <div>
                 <h2 className="mb-3 font-heading not-italic text-[1.5rem] leading-[1.3] font-bold sm:text-[2rem] md:text-[3rem] md:leading-[3.75rem] md:mb-4">
@@ -144,7 +144,7 @@ const CarouselSection = () => {
               </div>
             </div>
 
-            <div className="relative flex h-[260px] items-center justify-center overflow-visible px-1 sm:h-[300px] md:h-[360px] lg:h-auto">
+            <div className="relative flex h-[380px] items-center justify-center overflow-visible px-1 sm:h-[340px] md:h-[360px] lg:h-auto">
               {/* Background decorative circles - hidden on very small screens */}
               <div className="absolute top-[-10%] left-[20%] z-1 hidden h-[150px] w-[150px] rounded-full border border-gold/30 sm:block md:h-[200px] md:w-[200px]" />
               <div className="absolute top-[5%] right-[15%] z-1 hidden h-[180px] w-[180px] rounded-full bg-[rgba(245,238,222,0.5)] sm:block md:h-[260px] md:w-[260px]" />
@@ -177,7 +177,7 @@ const CarouselSection = () => {
                   return (
                     <div
                       key={slide.title + index}
-                      className={`absolute h-[160px] w-[110px] rounded-[12px] transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)] [transform-style:preserve-3d] sm:h-[200px] sm:w-[140px] md:h-[260px] md:w-[180px] lg:h-[300px] lg:w-[200px] ${slidePosition[position]}`}
+                      className={`absolute h-[260px] w-[180px] rounded-[12px] transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)] [transform-style:preserve-3d] sm:h-[240px] sm:w-[165px] md:h-[260px] md:w-[180px] lg:h-[300px] lg:w-[200px] ${slidePosition[position]}`}
                     >
                       <div
                         className={`relative h-full w-full overflow-hidden rounded-[12px] md:rounded-[16px] ${position === 'active'
@@ -190,7 +190,7 @@ const CarouselSection = () => {
                           className={`absolute bottom-0 left-0 w-full bg-[linear-gradient(to_top,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_100%)] px-2 pt-4 pb-2 text-white transition-opacity duration-500 md:px-3 md:pt-6 md:pb-3 ${position === 'prev' || position === 'next' ? 'opacity-80' : ''
                             }`}
                         >
-                          <h3 className="mb-[3px] flex items-center gap-1 font-serif text-[0.7rem] font-medium text-white md:gap-1.5 md:text-[0.9rem]">
+                          <h3 className="mb-[3px] flex items-center gap-1 font-serif text-[0.8rem] font-medium text-white md:gap-1.5 md:text-[0.9rem]">
                             {slide.tagPrimary}
                             <span className="inline-block h-px w-[15px] bg-white/60 md:w-[25px]" />
                           </h3>

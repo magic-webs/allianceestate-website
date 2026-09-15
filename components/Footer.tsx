@@ -7,7 +7,7 @@ const footerLink =
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-8 text-slate-800 md:pt-24">
+    <footer className="relative z-20 bg-slate-50 border-t border-slate-200 pt-16 pb-8 text-slate-800 md:pt-24">
       <div className="mx-auto mb-16 grid w-full max-w-[1200px] grid-cols-1 gap-8 px-4 md:grid-cols-3 md:gap-12 md:px-8 lg:grid-cols-[2fr_1fr_1fr_1.5fr]">
         <div className="md:col-span-3 lg:col-span-1">
           <Link href="/" className="inline-block mb-4">

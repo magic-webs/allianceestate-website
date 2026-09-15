@@ -11,23 +11,23 @@ export default function ContactPage() {
       <Navbar />
       <main className="bg-slate-900 text-white min-h-screen">
         {/* Header */}
-        <section className="relative px-4 pt-28 pb-16 md:pt-36 bg-gradient-to-b from-primary to-slate-900 overflow-hidden">
-          <div className="mx-auto max-w-page text-center relative z-10 px-4 md:px-8">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs tracking-wider text-gold uppercase">
+        <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-16 bg-gradient-to-b from-primary to-slate-900 overflow-hidden">
+          <div className="mx-auto max-w-page text-center relative z-10 px-0 md:px-4">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[0.65rem] tracking-wider text-gold uppercase md:mb-4 md:px-4 md:py-1.5 md:text-xs">
               <span>Get In Touch</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-heading mb-4">
+            <h1 className="text-[1.9rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-3 leading-tight md:mb-4">
               Contact Our Estate Advisors
             </h1>
-            <p className="max-w-2xl mx-auto text-slate-300 text-lg font-light">
+            <p className="max-w-2xl mx-auto text-slate-300 text-base font-light md:text-lg">
               Have questions about plots, RERA projects, or land acquisitions? Speak directly with our dedicated real estate experts today.
             </p>
           </div>
         </section>
 
         {/* Contact Info Cards */}
-        <section className="py-12 px-4 md:px-8">
-          <div className="mx-auto max-w-page grid grid-cols-1 md:grid-cols-3 gap-6">
+        <section className="py-10 px-4 md:py-12 md:px-8">
+          <div className="mx-auto max-w-page grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6">
             <div className="p-8 rounded-2xl bg-slate-800/60 border border-white/20 flex flex-col items-start hover:border-gold/50 transition-all shadow-xl backdrop-blur-md">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500 to-rose-600 text-white flex items-center justify-center text-xl mb-4 shadow-lg shadow-rose-500/20">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
