@@ -33,7 +33,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden py-16 md:py-24 bg-slate-950 text-white" id="contact">
+    <section className="relative overflow-hidden py-12 md:py-24 bg-slate-950 text-white" id="contact">
       {/* ── Full Container Background Image ── */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
@@ -44,23 +44,23 @@ const ContactSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950 /70 via-slate-900/80 to-slate-950/90" />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-page px-6 md:px-8 xl:px-16">
+      <div className="relative z-10 mx-auto w-full max-w-page px-4 md:px-8 xl:px-16">
         {/* Header */}
-        <div className="max-w-[600px] mb-12">
-          <div className="mb-4 flex items-center gap-4 text-[0.72rem] font-bold tracking-[3px] text-gold">
-            <span className="inline-block h-0.5 w-7 bg-gold" />
+        <div className="max-w-[600px] mb-8 md:mb-12">
+          <div className="mb-3 flex items-center gap-3 text-[0.65rem] font-bold tracking-[2.5px] text-gold md:mb-4 md:gap-4 md:text-[0.72rem] md:tracking-[3px]">
+            <span className="inline-block h-0.5 w-5 bg-gold md:w-7" />
             GET IN TOUCH
           </div>
-          <h2 className="mb-[0.85rem] font-heading text-[2.5rem] leading-[1.1] font-bold text-white md:text-[3.4rem]">
+          <h2 className="mb-3 font-heading text-[1.9rem] leading-[1.1] font-bold text-white sm:text-[2.5rem] md:mb-[0.85rem] md:text-[3.4rem]">
             Let&apos;s Build <span className="font-semibold text-gold italic">What&apos;s Next.</span>
           </h2>
-          <p className="max-w-[480px] text-[1.05rem] leading-[1.65] text-slate-300">
+          <p className="max-w-[480px] text-[0.9rem] leading-[1.65] text-slate-300 md:text-[1.05rem]">
             Have a question, need more information, or want to explore investment opportunities? Our team is here to help.
           </p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
+        <div className="grid grid-cols-1 items-start gap-6 md:gap-8 lg:grid-cols-[1.15fr_1fr]">
           {/* Form Card */}
           <div className={cardClass}>
             <div className={cardHeadingClass}>

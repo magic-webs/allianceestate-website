@@ -16,7 +16,7 @@ const LocationIntelligence = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="relative flex min-h-[600px] items-center overflow-hidden">
+    <section className="relative flex min-h-[500px] items-center overflow-hidden md:min-h-[600px]">
       <div className="absolute top-0 left-0 z-1 h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2000&auto=format&fit=crop"
@@ -27,28 +27,28 @@ const LocationIntelligence = () => {
       </div>
 
       <div
-        className="relative z-2 mx-auto grid w-full max-w-page grid-cols-1 items-center gap-8 px-8 py-12 lg:grid-cols-[1fr_1.5fr] lg:gap-12"
+        className="relative z-2 mx-auto grid w-full max-w-page grid-cols-1 items-center gap-6 px-4 py-10 md:px-8 md:py-12 md:gap-8 lg:grid-cols-[1fr_1.5fr] lg:gap-12"
         ref={ref as React.RefObject<HTMLDivElement>}
       >
         <div>
-          <h2 className="fade-up mb-6 text-[2rem] text-white md:text-[2.5rem] lg:text-[3.5rem]">
+          <h2 className="fade-up mb-4 text-[1.75rem] leading-tight text-white md:text-[2.5rem] md:mb-6 lg:text-[3.5rem]">
             Location Is the Investment.
           </h2>
-          <p className="fade-up text-[1.25rem] leading-[1.6] text-slate-300 delay-200">
+          <p className="fade-up text-[0.95rem] leading-[1.6] text-slate-300 delay-200 md:text-[1.25rem]">
             We focus on markets where infrastructure, industry and urban expansion converge.
           </p>
         </div>
 
-        <div className="relative min-h-[300px] md:min-h-[350px] lg:min-h-[450px]">
+        <div className="relative min-h-[220px] md:min-h-[300px] lg:min-h-[450px]">
           {markers.map((marker, index) => (
             <div
               key={marker.name}
-              className="group absolute flex animate-marker-in cursor-pointer items-center gap-3 opacity-0"
+              className="group absolute flex animate-marker-in cursor-pointer items-center gap-2 opacity-0 md:gap-3"
               style={{ top: marker.top, left: marker.left, animationDelay: `${0.4 + index * 0.15}s` }}
             >
-              <span className="relative z-2 h-3 w-3 shrink-0 rounded-full bg-gold" />
-              <span className="absolute top-1/2 -left-1.5 h-6 w-6 animate-marker-pulse rounded-full border-2 border-gold opacity-0" />
-              <span className="text-[0.75rem] font-semibold tracking-[0.5px] whitespace-nowrap text-white transition-all duration-400 ease-smooth group-hover:text-gold md:text-[0.9rem]">
+              <span className="relative z-2 h-2.5 w-2.5 shrink-0 rounded-full bg-gold md:h-3 md:w-3" />
+              <span className="absolute top-1/2 -left-1.5 h-5 w-5 animate-marker-pulse rounded-full border-2 border-gold opacity-0 md:h-6 md:w-6" />
+              <span className="text-[0.65rem] font-semibold tracking-[0.3px] whitespace-nowrap text-white transition-all duration-400 ease-smooth group-hover:text-gold sm:text-[0.75rem] md:text-[0.9rem]">
                 {marker.name}
               </span>
             </div>

@@ -31,19 +31,19 @@ const FeaturedOpportunities = () => {
   const headerRef = useScrollReveal();
 
   return (
-    <section className="bg-white py-16 md:py-32" id="opportunities">
+    <section className="bg-white py-12 md:py-32" id="opportunities">
       <div className="mx-auto w-full max-w-page px-4 md:px-8">
         <div
-          className="mx-auto mb-20 max-w-[700px] text-center"
+          className="mx-auto mb-12 max-w-[700px] text-center md:mb-20"
           ref={headerRef as React.RefObject<HTMLDivElement>}
         >
-          <h2 className="fade-up mb-6 text-[2.25rem] md:text-5xl">Opportunities Worth Looking At</h2>
-          <p className="fade-up text-[1.25rem] text-muted delay-200">
+          <h2 className="fade-up mb-4 text-[1.75rem] sm:text-[2.25rem] md:text-5xl">Opportunities Worth Looking At</h2>
+          <p className="fade-up text-[1rem] text-muted delay-200 md:text-[1.25rem]">
             A focused selection of strategically positioned real-estate opportunities.
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-[600px] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3">
           {opportunities.map((item) => (
             <div
               className="group relative overflow-hidden border border-primary/8 bg-white transition-all duration-400 ease-smooth hover:-translate-y-2 hover:shadow-premium"

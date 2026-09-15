@@ -100,7 +100,7 @@ const HeroSection = () => {
   const slide = slides[active];
 
   return (
-    <section className="relative flex h-screen min-h-screen items-center overflow-hidden text-white md:min-h-[800px]">
+    <section className="relative flex h-screen min-h-[600px] items-center overflow-hidden text-white md:min-h-[800px]">
       {/* Slides – crossfade */}
       {slides.map((s, i) => (
         <div
@@ -117,59 +117,59 @@ const HeroSection = () => {
         </div>
       ))}
 
-      <div className="relative z-2 mx-auto flex h-full w-full max-w-page flex-col justify-center px-4 pt-28 md:px-8 md:pt-36">
+      <div className="relative z-2 mx-auto flex h-full w-full max-w-page flex-col justify-center px-4 pt-20 md:px-8 md:pt-36">
         <div className="max-w-[800px]">
           <div
-            className={`flex items-center gap-4 font-heading text-[0.85rem] font-semibold tracking-[3px] text-gold opacity-0 [animation-delay:0.1s] mb-8 ${reveal}`}
+            className={`flex items-center gap-3 font-heading text-[0.7rem] font-semibold tracking-[2px] text-gold opacity-0 [animation-delay:0.1s] mb-4 md:text-[0.85rem] md:tracking-[3px] md:gap-4 md:mb-8 ${reveal}`}
           >
-            {slide.eyebrow} <span className="inline-block h-px w-10 bg-gold" />
+            {slide.eyebrow} <span className="inline-block h-px w-6 bg-gold md:w-10" />
           </div>
 
           <h1
-            className={`mb-8 text-5xl leading-[1.1] font-medium tracking-[-1px] text-white opacity-0 [animation-delay:0.3s] md:text-[3.5rem] lg:text-[5rem] ${reveal}`}
+            className={`mb-5 text-[2.2rem] leading-[1.15] font-medium tracking-[-0.5px] text-white opacity-0 [animation-delay:0.3s] sm:text-[2.8rem] md:text-[3.5rem] md:mb-8 md:tracking-[-1px] lg:text-[5rem] ${reveal}`}
           >
             {slide.heading}
           </h1>
 
           <p
-            className={`mb-12 max-w-[650px] text-[1.1rem] leading-[1.6] text-slate-200 opacity-0 [animation-delay:0.5s] md:text-[1.25rem] ${reveal}`}
+            className={`mb-8 max-w-[650px] text-[0.95rem] leading-[1.6] text-slate-200 opacity-0 [animation-delay:0.5s] md:mb-12 md:text-[1.25rem] ${reveal}`}
           >
             {slide.sub}
           </p>
 
           <div
-            className={`mb-8 flex flex-col gap-6 opacity-0 [animation-delay:0.7s] md:flex-row ${reveal}`}
+            className={`mb-8 flex flex-col gap-3 opacity-0 [animation-delay:0.7s] sm:flex-row sm:gap-4 ${reveal}`}
           >
             <Link
               href="/projects/residential"
-              className={`${heroBtn} border-gold bg-gold text-ink hover:-translate-y-0.5 hover:border-gold-light hover:bg-gold-light`}
+              className={`${heroBtn} border-gold bg-gold text-ink hover:-translate-y-0.5 hover:border-gold-light hover:bg-gold-light px-6 py-3 text-sm md:px-8 md:py-4 md:text-base`}
             >
               EXPLORE PROJECTS &rarr;
             </Link>
             <Link
               href="/contact"
-              className={`${heroBtn} border-white/40 bg-transparent text-white hover:-translate-y-0.5 hover:border-white hover:bg-white/10`}
+              className={`${heroBtn} border-white/40 bg-transparent text-white hover:-translate-y-0.5 hover:border-white hover:bg-white/10 px-6 py-3 text-sm md:px-8 md:py-4 md:text-base`}
             >
               LEARN MORE &rarr;
             </Link>
           </div>
 
           <div
-            className={`mb-16 flex items-center gap-4 opacity-0 [animation-delay:0.8s] ${reveal}`}
+            className={`mb-8 flex items-center gap-3 opacity-0 [animation-delay:0.8s] ${reveal}`}
           >
             <button
               onClick={handlePrev}
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/40 bg-transparent text-white transition-all hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-transparent text-white transition-all hover:-translate-y-0.5 hover:border-white hover:bg-white/10 md:h-12 md:w-12"
               aria-label="Previous slide"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
             </button>
             <button
               onClick={handleNext}
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/40 bg-transparent text-white transition-all hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-transparent text-white transition-all hover:-translate-y-0.5 hover:border-white hover:bg-white/10 md:h-12 md:w-12"
               aria-label="Next slide"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </button>
           </div>
         </div>

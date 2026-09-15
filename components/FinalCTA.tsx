@@ -19,18 +19,18 @@ const FinalCTA = () => {
       </div>
 
       <div
-        className="relative z-2 mx-auto w-full max-w-page px-4 py-12 text-center md:px-8 md:py-20"
+        className="relative z-2 mx-auto w-full max-w-page px-4 py-10 text-center md:px-8 md:py-20"
         ref={ref as React.RefObject<HTMLDivElement>}
       >
-        <h2 className="fade-up mx-auto mb-6 max-w-[800px] text-[2.5rem] text-white md:text-[4rem]">
+        <h2 className="fade-up mx-auto mb-4 max-w-[800px] text-[1.8rem] leading-tight text-white sm:text-[2.5rem] md:mb-6 md:text-[4rem]">
           Your Next Investment
           <br />
           Starts With the Right Location.
         </h2>
-        <p className="fade-up mb-12 text-[1.1rem] text-slate-300 delay-200 md:text-[1.35rem]">
+        <p className="fade-up mb-8 text-[0.95rem] text-slate-300 delay-200 md:mb-12 md:text-[1.35rem]">
           Let&apos;s identify the opportunity that fits your investment goals.
         </p>
-        <div className="fade-up flex flex-col items-center justify-center gap-6 delay-400 md:flex-row md:flex-wrap">
+        <div className="fade-up flex flex-col items-center justify-center gap-4 delay-400 md:flex-row md:flex-wrap md:gap-6">
           <Link href="/contact" className={btnPrimary}>
             Talk to an Advisor
           </Link>

@@ -68,36 +68,36 @@ const PhilosophySection = () => {
   }, []);
 
   return (
-    <section className="bg-white py-16 md:py-32" id="about">
+    <section className="bg-white py-12 md:py-32" id="about">
       <div className="mx-auto w-full max-w-page px-4 md:px-8">
-        <div className="mb-16 grid grid-cols-1 items-center gap-8 md:mb-32 md:grid-cols-2 md:gap-16">
+        <div className="mb-12 grid grid-cols-1 items-center gap-6 md:mb-32 md:grid-cols-2 md:gap-16">
           <div>
-            <h2 className="fade-up text-[2.25rem] leading-tight text-primary md:text-[2.5rem] lg:text-[3.5rem]">
+            <h2 className="fade-up text-[1.75rem] leading-tight text-primary sm:text-[2.25rem] md:text-[2.5rem] lg:text-[3.5rem]">
               Property is physical.
               <br />
               Opportunity is strategic.
             </h2>
           </div>
           <div>
-            <p className="fade-up max-w-[500px] text-[1.25rem] leading-[1.6] text-ink delay-200 lg:text-2xl">
+            <p className="fade-up max-w-[500px] text-[1rem] leading-[1.6] text-ink delay-200 md:text-[1.25rem] lg:text-2xl">
               We help investors identify real-estate opportunities where infrastructure, economic growth and future demand come together. Our focus is on long-term value creation.
             </p>
           </div>
         </div>
 
         <div
-          className="grid grid-cols-1 gap-8 border-t border-primary/10 pt-12 md:grid-cols-2 md:gap-y-12 lg:grid-cols-4 lg:pt-16"
+          className="grid grid-cols-2 gap-6 border-t border-primary/10 pt-10 md:gap-y-12 md:pt-12 lg:grid-cols-4 lg:pt-16"
           ref={statsRef}
         >
           {stats.map((stat) => (
             <div
-              className="relative flex flex-col items-center px-4 py-8 text-center before:absolute before:top-0 before:left-1/2 before:h-[3px] before:w-10 before:-translate-x-1/2 before:bg-gold before:opacity-40 before:content-['']"
+              className="relative flex flex-col items-center px-2 py-6 text-center before:absolute before:top-0 before:left-1/2 before:h-[3px] before:w-8 before:-translate-x-1/2 before:bg-gold before:opacity-40 before:content-['']"
               key={stat.label}
             >
-              <div className="mb-4 font-heading text-[3rem] leading-none font-bold text-primary lg:text-[4.5rem]">
+              <div className="mb-3 font-heading text-[2rem] leading-none font-bold text-primary md:mb-4 md:text-[3rem] lg:text-[4.5rem]">
                 <CountUpNumber target={stat.target} suffix={stat.suffix} started={countStarted} />
               </div>
-              <div className="text-[1.05rem] font-medium tracking-[0.3px] text-muted">{stat.label}</div>
+              <div className="text-[0.85rem] font-medium tracking-[0.3px] text-muted md:text-[1.05rem]">{stat.label}</div>
             </div>
           ))}
         </div>

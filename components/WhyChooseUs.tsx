@@ -29,18 +29,18 @@ const WhyChooseUs = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="bg-primary py-20 md:py-32">
+    <section className="bg-primary py-14 md:py-32">
       <div className="mx-auto w-full max-w-page px-4 md:px-8">
         <div
-          className="mx-auto mb-16 max-w-[700px] text-center md:mb-24"
+          className="mx-auto mb-12 max-w-[700px] text-center md:mb-24"
           ref={ref as React.RefObject<HTMLDivElement>}
         >
-          <h2 className="fade-up mb-6 text-[2.5rem] text-white lg:text-[3.5rem]">
+          <h2 className="fade-up mb-4 text-[2rem] leading-tight text-white md:mb-6 md:text-[2.5rem] lg:text-[3.5rem]">
             Not Just Property.
             <br />
             Perspective.
           </h2>
-          <p className="fade-up text-[1.25rem] leading-[1.6] text-slate-400 delay-200">
+          <p className="fade-up text-[1rem] leading-[1.6] text-slate-400 delay-200 md:text-[1.25rem]">
             We bring together market intelligence, strategic thinking and operational expertise to help investors make informed real-estate decisions.
           </p>
         </div>

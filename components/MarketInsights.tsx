@@ -28,13 +28,13 @@ const MarketInsights = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="bg-surface py-16 md:py-32" id="insights">
+    <section className="bg-surface py-12 md:py-32" id="insights">
       <div className="mx-auto w-full max-w-page px-4 md:px-8">
-        <div className="mb-20 max-w-[700px]" ref={ref as React.RefObject<HTMLDivElement>}>
-          <h2 className="fade-up text-[2.25rem] md:text-5xl">What the Market Is Telling Us</h2>
+        <div className="mb-10 max-w-[700px] md:mb-20" ref={ref as React.RefObject<HTMLDivElement>}>
+          <h2 className="fade-up text-[1.75rem] sm:text-[2.25rem] md:text-5xl">What the Market Is Telling Us</h2>
         </div>
 
-        <div className="grid max-w-[600px] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3">
           {articles.map((article) => (
             <Link
               href="#"
