@@ -1,6 +1,5 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
 
 const stats = [
   { target: 15, suffix: '+', label: 'Years of Experience' },
@@ -80,15 +79,9 @@ const PhilosophySection = () => {
             </h2>
           </div>
           <div>
-            <p className="fade-up mb-8 max-w-[500px] text-[1.25rem] leading-[1.6] text-ink delay-200 lg:text-2xl">
+            <p className="fade-up max-w-[500px] text-[1.25rem] leading-[1.6] text-ink delay-200 lg:text-2xl">
               We help investors identify real-estate opportunities where infrastructure, economic growth and future demand come together. Our focus is on long-term value creation.
             </p>
-            <Link
-              href="#approach"
-              className="fade-up relative inline-flex items-center text-[1.125rem] font-semibold text-primary delay-400 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-gold after:transition-all after:duration-400 after:ease-smooth after:content-[''] hover:text-gold hover:after:w-full"
-            >
-              Discover Our Approach &rarr;
-            </Link>
           </div>
         </div>
 

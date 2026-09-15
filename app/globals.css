@@ -106,7 +106,7 @@
   h4,
   h5,
   h6 {
-    @apply font-heading font-bold leading-tight text-primary;
+    @apply font-heading font-bold leading-tight;
   }
 
   /* Preflight ships `cursor: default` on buttons; this site wants pointers. */
