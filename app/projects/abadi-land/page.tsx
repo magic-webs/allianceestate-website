@@ -11,7 +11,7 @@ export default function AbadiLandPage() {
   return (
     <>
       <Navbar />
-      <main className="bg-slate-900 text-white min-h-screen pt-28">
+      <main className="bg-slate-900 text-white min-h-screen">
         {/* Banner */}
         <section className="relative px-4 pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
           <div className="absolute inset-0 opacity-20">

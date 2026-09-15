@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   description: "Identify high-growth property opportunities with strategic locations, market intelligence, and end-to-end investment assistance.",
 };
 
+import SmoothScroll from "../components/SmoothScroll";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +31,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${plusJakartaSans.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }

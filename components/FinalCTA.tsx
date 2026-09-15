@@ -8,7 +8,7 @@ const FinalCTA = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="relative flex min-h-[600px] items-center overflow-hidden" id="contact">
+    <section className="relative flex min-h-[400px] items-center overflow-hidden" id="contact">
       <div className="absolute top-0 left-0 z-1 h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop"
@@ -19,7 +19,7 @@ const FinalCTA = () => {
       </div>
 
       <div
-        className="relative z-2 mx-auto w-full max-w-page px-4 py-20 text-center md:px-8 md:py-32"
+        className="relative z-2 mx-auto w-full max-w-page px-4 py-12 text-center md:px-8 md:py-20"
         ref={ref as React.RefObject<HTMLDivElement>}
       >
         <h2 className="fade-up mx-auto mb-6 max-w-[800px] text-[2.5rem] text-white md:text-[4rem]">
@@ -31,11 +31,8 @@ const FinalCTA = () => {
           Let&apos;s identify the opportunity that fits your investment goals.
         </p>
         <div className="fade-up flex flex-col items-center justify-center gap-6 delay-400 md:flex-row md:flex-wrap">
-          <Link href="#contact" className={btnPrimary}>
+          <Link href="/contact" className={btnPrimary}>
             Talk to an Advisor
-          </Link>
-          <Link href="#opportunities" className={btnWhite}>
-            Explore Opportunities
           </Link>
         </div>
       </div>

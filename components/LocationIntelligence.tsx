@@ -16,7 +16,7 @@ const LocationIntelligence = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="relative flex min-h-[700px] items-center overflow-hidden">
+    <section className="relative flex min-h-[600px] items-center overflow-hidden">
       <div className="absolute top-0 left-0 z-1 h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2000&auto=format&fit=crop"
@@ -27,7 +27,7 @@ const LocationIntelligence = () => {
       </div>
 
       <div
-        className="relative z-2 mx-auto grid w-full max-w-page grid-cols-1 items-center gap-12 px-8 py-24 lg:grid-cols-[1fr_1.5fr] lg:gap-16"
+        className="relative z-2 mx-auto grid w-full max-w-page grid-cols-1 items-center gap-8 px-8 py-12 lg:grid-cols-[1fr_1.5fr] lg:gap-12"
         ref={ref as React.RefObject<HTMLDivElement>}
       >
         <div>

@@ -28,7 +28,7 @@ const WhyMarketSection = () => {
   const blocksRef = useScrollReveal();
 
   return (
-    <section className="bg-[#fafbfc] pt-8 pb-4" id="markets">
+    <section className="bg-[#fafbfc] pt-8" id="markets">
       <div className="mx-auto w-full max-w-page px-4 md:px-8">
         <div
           className="mx-auto max-w-[800px] text-center"

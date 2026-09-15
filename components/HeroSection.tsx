@@ -17,6 +17,7 @@ const slides = [
       </>
     ),
     sub: 'Explore carefully selected land opportunities across emerging growth corridors of Uttar Pradesh.',
+    link: '/projects/residential',
   },
   {
     image: '/Govt.-equisition.png',
@@ -29,6 +30,7 @@ const slides = [
       </>
     ),
     sub: 'Location insights, documentation and property information to help you make informed land decisions.',
+    link: '/projects/govt-acquisition-land',
   },
   {
     image: '/Yamuna-Expressway.png',
@@ -41,6 +43,7 @@ const slides = [
       </>
     ),
     sub: 'Explore property opportunities across one of Uttar Pradesh major planned development corridors.',
+    link: '/projects/rera/yamuna-expressway',
   },
   {
     image: '/Abadi-landd.png',
@@ -53,6 +56,7 @@ const slides = [
       </>
     ),
     sub: 'Explore land opportunities located within or around abadi areas, subject to applicable revenue records and local regulations.',
+    link: '/projects/abadi-land',
   },
 ];
 
@@ -137,13 +141,13 @@ const HeroSection = () => {
             className={`mb-8 flex flex-col gap-6 opacity-0 [animation-delay:0.7s] md:flex-row ${reveal}`}
           >
             <Link
-              href="#opportunities"
+              href="/projects/residential"
               className={`${heroBtn} border-gold bg-gold text-ink hover:-translate-y-0.5 hover:border-gold-light hover:bg-gold-light`}
             >
               EXPLORE PROJECTS &rarr;
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               className={`${heroBtn} border-white/40 bg-transparent text-white hover:-translate-y-0.5 hover:border-white hover:bg-white/10`}
             >
               LEARN MORE &rarr;
@@ -168,15 +172,6 @@ const HeroSection = () => {
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </button>
           </div>
-        </div>
-
-        {/* Bottom bar – counter / dots / arrows */}
-        <div
-          className={`relative mt-16 flex w-full flex-col items-center justify-between gap-8 opacity-0 [animation-delay:1s] md:absolute md:bottom-12 md:mt-0 md:w-[calc(100%-4rem)] md:max-w-[1400px] md:flex-row md:gap-0 ${reveal}`}
-        >
-
-
-
         </div>
       </div>
     </section>

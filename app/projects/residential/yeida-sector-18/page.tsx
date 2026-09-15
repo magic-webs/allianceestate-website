@@ -18,13 +18,13 @@ export default function Sector18Page() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs tracking-wider text-gold uppercase">
               <Link href="/projects/residential" className="hover:underline">Residential Plots</Link>
               <span>/</span>
-              <span>Noida Sector 18</span>
+              <span>YEIDA Sector 18</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold font-heading mb-4 text-white">
-              Noida Sector 18 Residential &amp; Commercial Plots
+              YEIDA Sector 18 Residential &amp; Commercial Plots
             </h1>
             <p className="max-w-3xl text-lg text-slate-300 font-light leading-relaxed mb-8">
-              Invest in Noida’s premier high-street destination. Unmatched capital appreciation, direct metro access, and immediate revenue potential.
+              Invest in YEIDA’s premier high-street destination. Unmatched capital appreciation, direct connectivity to Jewar Airport, and immediate revenue potential.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="#contact" className={btnPrimary}>
@@ -42,8 +42,8 @@ export default function Sector18Page() {
           <div className="mx-auto max-w-page grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[380px] rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
               <Image
-                src="/Hero section banner.jpg"
-                alt="Noida Sector 18 Location"
+                src="/Sector-18.png"
+                alt="YEIDA Sector 18 Location"
                 fill
                 className="object-cover"
               />

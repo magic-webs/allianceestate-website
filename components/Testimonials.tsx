@@ -33,10 +33,10 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="bg-white py-16 md:py-32">
+    <section className="bg-white py-10 md:py-16">
       <div className="mx-auto w-full max-w-page px-4 md:px-8">
         <div
-          className="mx-auto mb-20 max-w-[700px] text-center"
+          className="mx-auto mb-10 max-w-[700px] text-center"
           ref={ref as React.RefObject<HTMLDivElement>}
         >
           <h2 className="fade-up text-[2.25rem] md:text-5xl">Built on Trust.</h2>
@@ -45,8 +45,8 @@ const Testimonials = () => {
         <div className="relative mx-auto max-w-[800px] text-center">
           <div className="-mb-12 font-serif text-[8rem] leading-none text-gold opacity-30">&ldquo;</div>
 
-          <div className="flex min-h-[250px] flex-col justify-center">
-            <p className="mb-12 text-[1.2rem] leading-[1.6] text-ink italic md:text-2xl">
+          <div className="flex min-h-[180px] flex-col justify-center">
+            <p className="mb-8 text-[1.2rem] leading-[1.6] text-ink italic md:text-2xl">
               {testimonials[active].quote}
             </p>
             <div className="flex items-center justify-center gap-4">
@@ -60,33 +60,17 @@ const Testimonials = () => {
             </div>
           </div>
 
-          <div className="mt-12 flex items-center justify-center gap-8">
-            <button
-              onClick={prev}
-              className="flex h-[50px] w-[50px] items-center justify-center rounded-full border border-primary/15 text-[1.25rem] text-primary transition-all duration-400 ease-smooth hover:border-gold hover:text-gold"
-              aria-label="Previous testimonial"
-            >
-              &larr;
-            </button>
-            <div className="flex gap-3">
-              {testimonials.map((testimonial, index) => (
-                <button
-                  key={testimonial.name}
-                  className={`h-2.5 w-2.5 rounded-full transition-all duration-400 ease-smooth ${
-                    index === active ? 'scale-120 bg-gold' : 'bg-primary/15'
-                  }`}
-                  onClick={() => setActive(index)}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
-            </div>
-            <button
-              onClick={next}
-              className="flex h-[50px] w-[50px] items-center justify-center rounded-full border border-primary/15 text-[1.25rem] text-primary transition-all duration-400 ease-smooth hover:border-gold hover:text-gold"
-              aria-label="Next testimonial"
-            >
-              &rarr;
-            </button>
+          <div className="mt-8 flex items-center justify-center gap-3">
+            {testimonials.map((testimonial, index) => (
+              <button
+                key={testimonial.name}
+                className={`h-2.5 w-2.5 rounded-full transition-all duration-400 ease-smooth ${
+                  index === active ? 'scale-120 bg-gold' : 'bg-primary/15'
+                }`}
+                onClick={() => setActive(index)}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </div>

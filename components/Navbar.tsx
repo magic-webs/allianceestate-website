@@ -20,9 +20,9 @@ const subMenuItems: SubMenuItem[] = [
     label: 'Residential Plots',
     href: '/projects/residential',
     children: [
-      { label: 'Noida Sector 18', href: '/projects/residential/noida-sector-18' },
-      { label: 'Noida Sector 20', href: '/projects/residential/noida-sector-20' },
-      { label: 'Noida Sector 21', href: '/projects/residential/noida-sector-21' },
+      { label: 'YEIDA Sector 18', href: '/projects/residential/yeida-sector-18' },
+      { label: 'YEIDA Sector 20', href: '/projects/residential/yeida-sector-20' },
+      { label: 'YEIDA Sector 21', href: '/projects/residential/yeida-sector-21' },
     ],
   },
   {
@@ -146,81 +146,84 @@ const Navbar = () => {
             </button>
 
             {projectsOpen && (
-              <div className="z-100 mt-2 w-full border-l-2 border-gold/30 py-2 pl-3 lg:absolute lg:top-[calc(100%+14px)] lg:left-1/2 lg:mt-0 lg:w-auto lg:min-w-[240px] lg:-translate-x-1/2 lg:animate-dropdown-in lg:rounded-[14px] lg:border lg:border-gold/20 lg:bg-white/98 lg:py-2.5 lg:pl-0 lg:shadow-[0_12px_40px_rgba(0,0,0,0.12)] lg:before:absolute lg:before:-top-[6px] lg:before:left-1/2 lg:before:h-3 lg:before:w-3 lg:before:-translate-x-1/2 lg:before:rotate-45 lg:before:border-t lg:before:border-l lg:before:border-gold/20 lg:before:bg-white lg:before:content-['']">
-                {subMenuItems.map((item) => {
-                  const hasChildren = item.children && item.children.length > 0;
-                  const isSubOpen = activeSubmenu === item.label;
+              <div className="z-50 mt-2 w-full border-l-2 border-gold/30 py-2 pl-3 lg:absolute lg:top-full lg:left-0 lg:mt-0 lg:w-auto lg:min-w-[250px] lg:pt-2 lg:pl-0">
+                <div className="lg:rounded-[14px] lg:border lg:border-gold/20 lg:bg-white lg:py-2.5 lg:shadow-[0_12px_40px_rgba(0,0,0,0.12)] lg:before:absolute lg:before:top-1 lg:before:left-6 lg:before:h-3 lg:before:w-3 lg:before:-translate-x-1/2 lg:before:rotate-45 lg:before:border-t lg:before:border-l lg:before:border-gold/20 lg:before:bg-white lg:before:content-['']">
+                  {subMenuItems.map((item) => {
+                    const hasChildren = item.children && item.children.length > 0;
+                    const isSubOpen = activeSubmenu === item.label;
 
-                  return (
-                    <div
-                      key={item.label}
-                      className="relative group/sub"
-                      onMouseEnter={() => hasChildren && setActiveSubmenu(item.label)}
-                      onMouseLeave={() => hasChildren && setActiveSubmenu(null)}
-                    >
-                      <div className="flex items-center justify-between px-2 py-2 text-[0.95rem] font-medium text-ink transition-all duration-200 hover:text-gold lg:px-5 lg:py-[0.7rem] lg:text-[0.88rem] lg:hover:bg-gold/6 rounded-md lg:rounded-none">
-                        <Link
-                          href={item.href}
-                          className="flex items-center gap-3 flex-1"
-                          onClick={() => {
-                            if (!hasChildren) {
+                    return (
+                      <div
+                        key={item.label}
+                        className="relative group/sub"
+                        onMouseEnter={() => hasChildren && setActiveSubmenu(item.label)}
+                        onMouseLeave={() => hasChildren && setActiveSubmenu(null)}
+                      >
+                        <div className="flex items-center justify-between px-2 py-2 text-[0.95rem] font-medium text-ink transition-all duration-200 hover:text-gold lg:px-5 lg:py-[0.7rem] lg:text-[0.88rem] lg:hover:bg-gold/10 rounded-md lg:rounded-none">
+                          <Link
+                            href={item.href}
+                            className="flex items-center gap-3 flex-1"
+                            onClick={() => {
                               setProjectsOpen(false);
                               setMobileMenuOpen(false);
-                            }
-                          }}
-                        >
-                          <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold opacity-60 transition-opacity duration-200 group-hover/sub:opacity-100" />
-                          {item.label}
-                        </Link>
-                        {hasChildren && (
-                          <button
-                            type="button"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              toggleSubmenu(item.label);
+                              setActiveSubmenu(null);
                             }}
-                            className="p-1 text-ink/70 hover:text-gold transition-colors focus:outline-none"
-                            aria-label={`Toggle ${item.label} submenu`}
                           >
-                            <svg
-                              className={`w-3.5 h-3.5 transition-transform duration-200 lg:-rotate-90 ${isSubOpen ? 'rotate-180 lg:-rotate-90' : ''
-                                }`}
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              strokeWidth="2"
+                            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold opacity-60 transition-opacity duration-200 group-hover/sub:opacity-100" />
+                            {item.label}
+                          </Link>
+                          {hasChildren && (
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                toggleSubmenu(item.label);
+                              }}
+                              className="p-1 text-ink/70 hover:text-gold transition-colors focus:outline-none"
+                              aria-label={`Toggle ${item.label} submenu`}
                             >
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                          </button>
+                              <svg
+                                className={`w-3.5 h-3.5 transition-transform duration-200 lg:-rotate-90 ${isSubOpen ? 'rotate-180 lg:-rotate-90' : ''
+                                  }`}
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                              </svg>
+                            </button>
+                          )}
+                        </div>
+
+                        {hasChildren && (
+                          <div
+                            className={`mt-1 space-y-1 pl-6 border-l border-gold/20 lg:mt-0 lg:space-y-0 lg:pl-0 lg:border-l-0 ${isSubOpen ? 'block' : 'hidden lg:hidden'
+                              } lg:absolute lg:top-0 lg:left-full lg:w-auto lg:min-w-[220px] lg:pl-1`}
+                          >
+                            <div className="lg:rounded-[12px] lg:border lg:border-gold/20 lg:bg-white lg:py-2 lg:shadow-[0_12px_30px_rgba(0,0,0,0.12)]">
+                              {item.children!.map((child) => (
+                                <Link
+                                  key={child.href}
+                                  href={child.href}
+                                  className="flex items-center gap-2.5 px-3 py-1.5 text-[0.88rem] font-normal text-ink/90 transition-all duration-200 hover:text-gold lg:px-4 lg:py-[0.6rem] lg:text-[0.84rem] lg:hover:bg-gold/10"
+                                  onClick={() => {
+                                    setProjectsOpen(false);
+                                    setMobileMenuOpen(false);
+                                    setActiveSubmenu(null);
+                                  }}
+                                >
+                                  <span className="h-1 w-1 shrink-0 rounded-full bg-gold/70" />
+                                  {child.label}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
                         )}
                       </div>
-
-                      {hasChildren && (
-                        <div
-                          className={`mt-1 space-y-1 pl-6 border-l border-gold/20 lg:mt-0 lg:space-y-0 lg:pl-0 lg:border-l-0 ${isSubOpen ? 'block' : 'hidden lg:hidden'
-                            } lg:absolute lg:top-0 lg:left-full lg:ml-1 lg:w-auto lg:min-w-[210px] lg:animate-dropdown-in lg:rounded-[12px] lg:border lg:border-gold/20 lg:bg-white/98 lg:py-2 lg:shadow-[0_12px_30px_rgba(0,0,0,0.12)]`}
-                        >
-                          {item.children!.map((child) => (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              className="flex items-center gap-2.5 px-3 py-1.5 text-[0.88rem] font-normal text-ink/90 transition-all duration-200 hover:text-gold lg:px-4 lg:py-[0.6rem] lg:text-[0.84rem] lg:hover:bg-gold/6"
-                              onClick={() => {
-                                setProjectsOpen(false);
-                                setMobileMenuOpen(false);
-                                setActiveSubmenu(null);
-                              }}
-                            >
-                              <span className="h-1 w-1 shrink-0 rounded-full bg-gold/70" />
-                              {child.label}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             )}
           </div>

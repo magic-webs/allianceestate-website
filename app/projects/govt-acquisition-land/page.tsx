@@ -11,7 +11,7 @@ export default function GovtAcquisitionLandPage() {
   return (
     <>
       <Navbar />
-      <main className="bg-slate-900 text-white min-h-screen pt-28">
+      <main className="bg-slate-900 text-white min-h-screen">
         {/* Banner */}
         <section className="relative px-4 pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
           <div className="absolute inset-0 opacity-20">
@@ -27,10 +27,10 @@ export default function GovtAcquisitionLandPage() {
               <span>Authority Allotment Advisory</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 text-white">
-              Government Acquisition &amp; 6% / 7% Allotment Land
+              Government Acquisition &amp; Land
             </h1>
             <p className="max-w-3xl text-lg text-slate-300 font-light leading-relaxed mb-8">
-              Expert legal &amp; transactional advisory for Authority Acquired Land, 6% &amp; 7% Abadi Compensation Residential Plots, and direct transfer opportunities.
+              Expert legal &amp; transactional advisory for Authority Acquired Land, Abadi Compensation Residential Plots, and direct transfer opportunities.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="#contact" className={btnPrimary}>
@@ -50,7 +50,7 @@ export default function GovtAcquisitionLandPage() {
               <h2 className="text-3xl font-bold text-white mb-6">Authority Allotment Highlights</h2>
               <div className="space-y-4">
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
-                  <h3 className="font-bold text-gold text-lg mb-1">🏛️ Authority Allotted 6% / 7% Plots</h3>
+                  <h3 className="font-bold text-gold text-lg mb-1">🏛️ Authority Allotted Plots</h3>
                   <p className="text-slate-300 text-sm">Residential plots allotted by Noida &amp; YEIDA authorities to land owners, offering 100% legal security and planned sector infrastructure.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
