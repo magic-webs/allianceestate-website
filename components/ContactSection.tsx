@@ -154,7 +154,9 @@ const ContactSection = () => {
                 <div className="flex flex-col gap-[0.85rem] [&>div>svg]:mt-0.5 [&>div>svg]:shrink-0">
                   <div className="flex items-start gap-2.5 text-[0.87rem] leading-[1.5] text-slate-200">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
-                    <span>F-75, First Floor, Galleria Market<br />Gaur Yamuna City, Gautam Buddha Nagar</span>
+                    <a href="https://maps.app.goo.gl/gi2qrnJVssnxg5nA7" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                      F-75, First Floor, Galleria Market<br />Gaur Yamuna City, Gautam Buddha Nagar
+                    </a>
                   </div>
                   <div className="flex items-start gap-2.5 text-[0.87rem] leading-[1.5] text-slate-200">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" /></svg>
@@ -173,17 +175,11 @@ const ContactSection = () => {
                   <span className="inline-block h-0.5 w-[22px] bg-gold" />
                 </div>
                 <div className="mb-4 flex gap-2.5 [&>a]:flex [&>a]:h-[38px] [&>a]:w-[38px] [&>a]:items-center [&>a]:justify-center [&>a]:rounded-[9px] [&>a]:border [&>a]:border-white/20 [&>a]:bg-slate-800/80 [&>a]:text-white [&>a]:transition-all [&>a]:duration-300 [&>a:hover]:-translate-y-0.5 [&>a:hover]:border-gold [&>a:hover]:text-gold [&>a:hover]:shadow-[0_4px_10px_rgba(201,162,39,0.2)]">
-                  <a href="#" aria-label="LinkedIn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" /><circle cx="4" cy="4" r="2" /></svg>
+                  <a href="#" aria-label="Facebook">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
                   </a>
                   <a href="#" aria-label="Instagram">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
-                  </a>
-                  <a href="#" aria-label="YouTube">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" /></svg>
-                  </a>
-                  <a href="#" aria-label="X">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
                   </a>
                 </div>
               </div>
@@ -193,14 +189,14 @@ const ContactSection = () => {
             <div className="relative h-[175px] overflow-hidden rounded-xl border border-white/20">
               <iframe
                 title="Alliance Estate Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0!2d77.366!3d28.626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a218d0e30d%3A0x5a88e1ca0b8e6b9a!2sSector+62%2C+Noida!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.3532984189334!2d77.555636!3d28.30676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc7eb2510bf8f%3A0xaee3d73df091be76!2sAlliance%20Estate!5e0!3m2!1sen!2sin!4v1710000000000"
                 className="block h-full w-full border-none"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
               <a
-                href="https://maps.google.com/?q=Gaur+Yamuna+City+Gautam+Buddha+Nagar"
+                href="https://maps.app.goo.gl/gi2qrnJVssnxg5nA7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute right-[0.6rem] bottom-[0.6rem] flex items-center gap-[0.3rem] rounded-[7px] border border-gold/40 bg-slate-900/90 px-[0.7rem] py-[0.35rem] text-[0.75rem] font-semibold text-gold no-underline shadow-[0_2px_8px_rgba(0,0,0,0.4)] transition-all duration-300 hover:bg-gold hover:text-slate-950"

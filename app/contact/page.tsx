@@ -43,10 +43,15 @@ export default function ContactPage() {
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 font-heading">Corporate Office</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <a
+                href="https://maps.app.goo.gl/gi2qrnJVssnxg5nA7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-300 text-sm leading-relaxed hover:text-gold transition-colors"
+              >
                 F-75, First Floor, Galleria Market,<br />
                 Gaur Yamuna City, Gautam Buddha Nagar
-              </p>
+              </a>
             </div>
 
             <div className="p-8 rounded-2xl bg-slate-800/60 border border-white/20 flex flex-col items-start hover:border-gold/50 transition-all shadow-xl backdrop-blur-md">

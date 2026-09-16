@@ -19,9 +19,31 @@ const Footer = () => {
               className="h-20 w-auto object-contain"
             />
           </Link>
-          <p className="text-[0.95rem] leading-[1.6] text-slate-600">
+          <p className="text-[0.95rem] leading-[1.6] text-slate-600 mb-4">
             Connecting people with thoughtfully selected land and real estate opportunities across emerging growth corridors.
           </p>
+          <div className="flex items-center gap-3">
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 bg-white text-slate-700 transition-all duration-300 hover:border-gold hover:bg-gold/10 hover:text-gold shadow-sm"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 bg-white text-slate-700 transition-all duration-300 hover:border-gold hover:bg-gold/10 hover:text-gold shadow-sm"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <div>
@@ -58,9 +80,16 @@ const Footer = () => {
             </li>
             <li>contact@allianceestate.com</li>
             <li>
-              F-75, First Floor, Galleria Market,
-              <br />
-              Gaur Yamuna City, Gautam Buddha Nagar
+              <a
+                href="https://maps.app.goo.gl/gi2qrnJVssnxg5nA7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold transition-colors"
+              >
+                F-75, First Floor, Galleria Market,
+                <br />
+                Gaur Yamuna City, Gautam Buddha Nagar
+              </a>
             </li>
           </ul>
         </div>
