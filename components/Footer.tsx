@@ -51,7 +51,11 @@ const Footer = () => {
             Contact
           </h4>
           <ul className="flex flex-col gap-4 text-[0.95rem] text-slate-600">
-            <li>+91 9990366338</li>
+            <li>
+              <a href="https://wa.me/919990366338" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                +91 9990366338 (WhatsApp)
+              </a>
+            </li>
             <li>contact@allianceestate.com</li>
             <li>
               F-75, First Floor, Galleria Market,

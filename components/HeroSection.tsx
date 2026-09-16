@@ -20,7 +20,7 @@ const slides = [
     link: '/projects/residential',
   },
   {
-    image: '/Govt.-equisition.png',
+    image: '/land-equisiton-03.png',
     eyebrow: 'GOVERNMENT ACQUISITION',
     heading: (
       <>
@@ -33,7 +33,7 @@ const slides = [
     link: '/projects/govt-acquisition-land',
   },
   {
-    image: '/Yamuna-Expressway.png',
+    image: '/yamuna-exp-02.png',
     eyebrow: 'YAMUNA EXPRESSWAY',
     heading: (
       <>
@@ -46,7 +46,7 @@ const slides = [
     link: '/projects/rera/yamuna-expressway',
   },
   {
-    image: '/Abadi-landd.png',
+    image: '/Abadi-16-9.png',
     eyebrow: 'ABADI LAND',
     heading: (
       <>

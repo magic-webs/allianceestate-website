@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Navbar from '../../../components/Navbar';
 import ContactSection from '../../../components/ContactSection';
 import Footer from '../../../components/Footer';
-import { btnPrimary, btnSecondary } from '../../../components/buttons';
+import { btnSecondary } from '../../../components/buttons';
 
 export default function GovtAcquisitionLandPage() {
   return (
@@ -16,10 +16,11 @@ export default function GovtAcquisitionLandPage() {
         <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="/Govt.-equisition.png"
+              src="/land-equisiton-03.png"
               alt="Government Acquisition Land Background"
               fill
               className="object-cover"
+              priority
             />
           </div>
           <div className="mx-auto max-w-page px-0 md:px-4 relative z-10">
@@ -33,9 +34,6 @@ export default function GovtAcquisitionLandPage() {
               Expert legal &amp; transactional advisory for Authority Acquired Land, Abadi Compensation Residential Plots, and direct transfer opportunities.
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
-              <Link href="#contact" className={btnPrimary}>
-                Speak to Acquisition Lawyer
-              </Link>
               <Link href="/" className={btnSecondary}>
                 Back to Home
               </Link>
@@ -65,7 +63,7 @@ export default function GovtAcquisitionLandPage() {
             </div>
             <div className="relative h-[240px] sm:h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
               <Image
-                src="/Govt.-equisition.png"
+                src="/land-equisiton-03.png"
                 alt="Government Acquisition Land Advisory"
                 fill
                 className="object-cover"

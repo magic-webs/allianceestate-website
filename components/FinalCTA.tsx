@@ -31,9 +31,14 @@ const FinalCTA = () => {
           Let&apos;s identify the opportunity that fits your investment goals.
         </p>
         <div className="fade-up flex flex-col items-center justify-center gap-4 delay-400 md:flex-row md:flex-wrap md:gap-6">
-          <Link href="/contact" className={btnPrimary}>
+          <a
+            href="https://wa.me/919990366338?text=Hello%20Alliance%20Estate%2C%20I%20would%20like%20to%20talk%20to%20an%20advisor%20about%20investment%20opportunities."
+            target="_blank"
+            rel="noopener noreferrer"
+            className={btnPrimary}
+          >
             Talk to an Advisor
-          </Link>
+          </a>
         </div>
       </div>
     </section>

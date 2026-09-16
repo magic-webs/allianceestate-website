@@ -11,7 +11,7 @@ const reraProjects = [
   {
     name: 'Yamuna Expressway',
     slug: '/projects/rera/yamuna-expressway',
-    image: '/Yamuna-Expressway.png',
+    image: '/yamuna-exp-02.png',
     badge: 'Jewar Airport Zone',
     desc: 'High-yield RERA registered plots & townships along the upcoming Noida International Airport corridor.',
     reraId: 'UPRERAPRJ15482',
@@ -20,7 +20,7 @@ const reraProjects = [
   {
     name: 'Gaur Yamuna City',
     slug: '/projects/rera/gaur-yamuna-city',
-    image: '/Rera-project.jpeg',
+    image: '/Gaur-yamuna-city.png',
     badge: '250+ Acre Integrated Township',
     desc: 'Integrated smart township featuring lakefront villas, commercial plazas, and luxury residential plots.',
     reraId: 'UPRERAPRJ94123',
@@ -29,7 +29,7 @@ const reraProjects = [
   {
     name: 'ACE Projects',
     slug: '/projects/rera/ace',
-    image: '/Rera-project.jpeg',
+    image: '/Ace-location.png',
     badge: 'Ultra Luxury Township',
     desc: 'Award-winning developer projects offering high-end residential land and architectural elegance.',
     reraId: 'UPRERAPRJ88210',
@@ -38,7 +38,7 @@ const reraProjects = [
   {
     name: 'ATS Projects',
     slug: '/projects/rera/ats',
-    image: '/Rera-project.jpeg',
+    image: '/ATS-location.png',
     badge: 'Signature Living',
     desc: 'Premium green living spaces with Spanish-inspired architecture and world-class sports facilities.',
     reraId: 'UPRERAPRJ77190',

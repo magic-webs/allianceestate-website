@@ -11,25 +11,39 @@ export default function Sector20Page() {
   return (
     <>
       <Navbar />
-      <main className="bg-slate-900 text-white min-h-screen pt-28">
+      <main className="bg-slate-900 text-white min-h-screen">
         {/* Banner */}
-        <section className="relative px-4 py-12 md:py-24 bg-gradient-to-b from-primary to-slate-900 overflow-hidden">
+        <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+            <Image
+              src="/yeida-sector-20.png"
+              alt="YEIDA Sector 20 Background"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           <div className="mx-auto max-w-page relative z-10 px-0 md:px-4">
-            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[0.65rem] tracking-wider text-gold uppercase">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[0.65rem] tracking-wider text-gold uppercase md:mb-4 md:px-4 md:py-1.5 md:text-xs">
               <Link href="/projects/residential" className="hover:underline">Residential Plots</Link>
               <span>/</span>
               <span>YEIDA Sector 20</span>
             </div>
-            <h1 className="text-[1.8rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-3 text-white leading-tight md:mb-4">
+            <h1 className="text-[1.9rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-4 text-white leading-tight">
               YEIDA Sector 20 Residential Plots
             </h1>
             <p className="max-w-3xl text-base text-slate-300 font-light leading-relaxed mb-6 md:text-lg md:mb-8">
               Experience serene luxury living with wide tree-lined avenues, established residential community, and immediate construction readiness.
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
-              <Link href="#contact" className={btnPrimary}>
+              <a
+                href="https://wa.me/919990366338?text=Hello%20Alliance%20Estate%2C%20I%20would%20like%20to%20request%20the%20price%20list%20for%20YEIDA%20Sector%2020%20residential%20plots."
+                target="_blank"
+                rel="noopener noreferrer"
+                className={btnPrimary}
+              >
                 Request Price List
-              </Link>
+              </a>
               <Link href="/projects/residential" className={btnSecondary}>
                 Back to Residential Plots
               </Link>

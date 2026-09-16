@@ -16,10 +16,11 @@ export default function AbadiLandPage() {
         <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="/Abadi-landd.png"
+              src="/Abadi-16-9.png"
               alt="Abadi Land Background"
               fill
               className="object-cover"
+              priority
             />
           </div>
           <div className="mx-auto max-w-page px-0 md:px-4 relative z-10">
@@ -33,9 +34,14 @@ export default function AbadiLandPage() {
               Verified Abadi land plots with clean revenue records, hassle-free mutation (Khatauni), and high capital appreciation potential across expanding urban hubs.
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
-              <Link href="#contact" className={btnPrimary}>
+              <a
+                href="https://wa.me/919990366338?text=Hello%20Alliance%20Estate%2C%20I%20would%20like%20to%20consult%20your%20land%20specialists%20about%20Abadi%20Land."
+                target="_blank"
+                rel="noopener noreferrer"
+                className={btnPrimary}
+              >
                 Consult Land Specialists
-              </Link>
+              </a>
               <Link href="/" className={btnSecondary}>
                 Back to Home
               </Link>
@@ -48,7 +54,7 @@ export default function AbadiLandPage() {
           <div className="mx-auto max-w-page grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative h-[240px] sm:h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
               <Image
-                src="/Abadi-land.png"
+                src="/Abadi-16-9.png"
                 alt="Abadi Land"
                 fill
                 className="object-cover"

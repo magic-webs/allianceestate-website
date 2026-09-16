@@ -14,7 +14,7 @@ export default function AboutPage() {
       <main className="bg-slate-900 text-white min-h-screen">
         {/* Hero Section */}
         <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
-          <div className="absolute inset-0 opacity-25">
+          <div className="absolute inset-0 opacity-20">
             <Image
               src="/About-us.png"
               alt="About Alliance Estate Background"
@@ -26,16 +26,21 @@ export default function AboutPage() {
             <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[0.65rem] tracking-wider text-gold uppercase md:mb-4 md:px-4 md:py-1.5 md:text-xs">
               <span>About Alliance Estate</span>
             </div>
-            <h1 className="text-[1.9rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-4 md:mb-6 tracking-tight text-white leading-tight">
+            <h1 className="text-[1.9rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-4 text-white leading-tight">
               Pioneering Strategic Real Estate Investments
             </h1>
             <p className="max-w-3xl text-base md:text-xl text-slate-300 font-light leading-relaxed mb-6 md:mb-8">
               Alliance Estate delivers unmatched expertise in land acquisition, RERA-approved developments, and high-yield strategic real estate assets across Delhi-NCR &amp; Yamuna Expressway.
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
-              <Link href="/contact" className={btnPrimary}>
+              <a
+                href="https://wa.me/919990366338?text=Hello%20Alliance%20Estate%2C%20I%20would%20like%20to%20schedule%20a%20consultation%20with%20an%20advisor."
+                target="_blank"
+                rel="noopener noreferrer"
+                className={btnPrimary}
+              >
                 Schedule a Consultation
-              </Link>
+              </a>
               <Link href="/projects/residential" className={btnSecondary}>
                 Explore Opportunities
               </Link>

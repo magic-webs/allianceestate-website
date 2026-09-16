@@ -46,7 +46,7 @@ export default function ResidentialPlotsPage() {
         <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="/Residential-plot.jpeg"
+              src="/Residential-plots.png"
               alt="Residential Plots Background"
               fill
               className="object-cover"

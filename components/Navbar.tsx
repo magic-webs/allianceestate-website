@@ -101,6 +101,15 @@ const Navbar = () => {
           </Link>
         </div>
 
+        {/* ── Mobile Menu Backdrop Overlay ── */}
+        {mobileMenuOpen && (
+          <div
+            className="fixed inset-0 z-999 bg-black/60 backdrop-blur-sm lg:hidden transition-opacity duration-300"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-hidden="true"
+          />
+        )}
+
         {/* ── Nav Links ── */}
         <nav
           className={`fixed top-0 z-1000 flex h-screen w-4/5 max-w-[360px] flex-col items-start justify-start overflow-y-auto gap-7 bg-white px-8 py-12 shadow-[-4px_0_30px_rgba(0,0,0,0.1)] transition-all duration-400 ease-smooth lg:static lg:h-auto lg:w-auto lg:max-w-none lg:flex-row lg:items-center lg:gap-9 lg:bg-transparent lg:p-0 lg:shadow-none lg:overflow-visible ${mobileMenuOpen ? 'right-0' : '-right-full'
@@ -233,23 +242,31 @@ const Navbar = () => {
           </Link>
 
           <div className="mt-4 block lg:hidden">
-            <Link href="/contact" className={btnPrimary} onClick={() => setMobileMenuOpen(false)}>
+            <a
+              href="https://wa.me/919990366338?text=Hello%20Alliance%20Estate%2C%20I%20would%20like%20to%20talk%20to%20an%20advisor."
+              target="_blank"
+              rel="noopener noreferrer"
+              className={btnPrimary}
+              onClick={() => setMobileMenuOpen(false)}
+            >
               Talk to an Advisor
-            </Link>
+            </a>
           </div>
         </nav>
 
         {/* ── Desktop CTA ── */}
         <div className="hidden lg:block">
-          <Link
-            href="/contact"
+          <a
+            href="https://wa.me/919990366338?text=Hello%20Alliance%20Estate%2C%20I%20would%20like%20to%20talk%20to%20an%20advisor."
+            target="_blank"
+            rel="noopener noreferrer"
             className={`inline-flex items-center justify-center rounded border bg-transparent px-[1.4rem] py-[0.7rem] text-[0.88rem] font-semibold whitespace-nowrap transition-all duration-400 ease-smooth ${scrolled
                 ? 'border-gold text-gold hover:bg-gold hover:text-white'
                 : 'border-white/70 text-white hover:bg-white hover:text-primary'
               }`}
           >
             Talk to an Advisor
-          </Link>
+          </a>
         </div>
 
         {/* ── Hamburger ── */}

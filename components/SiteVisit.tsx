@@ -33,15 +33,17 @@ const SiteVisit = () => {
             We believe informed investments start with real-world evaluation. Our guided site visits help investors
             see the location, understand the surroundings, and assess the opportunity beyond photographs and brochures.
           </p>
-          <Link
-            href="#contact"
+          <a
+            href="https://wa.me/919990366338?text=Hello%20Alliance%20Estate%2C%20I%20would%20like%20to%20schedule%20a%20site%20visit."
+            target="_blank"
+            rel="noopener noreferrer"
             className="fade-up group inline-flex items-center gap-2 border-b-2 border-gold pb-1 text-[1rem] font-semibold text-primary delay-400 hover:text-gold md:text-[1.1rem]"
           >
             Schedule a Site Visit
             <span className="inline-block transition-transform duration-400 ease-smooth group-hover:translate-x-[5px]">
               &rarr;
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

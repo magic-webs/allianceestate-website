@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 import ContactSection from '../../components/ContactSection';
 import Footer from '../../components/Footer';
@@ -11,12 +12,21 @@ export default function ContactPage() {
       <Navbar />
       <main className="bg-slate-900 text-white min-h-screen">
         {/* Header */}
-        <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-16 bg-gradient-to-b from-primary to-slate-900 overflow-hidden">
+        <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+            <Image
+              src="/contactus-bg.png"
+              alt="Contact Alliance Estate Background"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           <div className="mx-auto max-w-page text-center relative z-10 px-0 md:px-4">
             <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[0.65rem] tracking-wider text-gold uppercase md:mb-4 md:px-4 md:py-1.5 md:text-xs">
               <span>Get In Touch</span>
             </div>
-            <h1 className="text-[1.9rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-3 leading-tight md:mb-4">
+            <h1 className="text-[1.9rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-4 text-white leading-tight">
               Contact Our Estate Advisors
             </h1>
             <p className="max-w-2xl mx-auto text-slate-300 text-base font-light md:text-lg">
@@ -47,7 +57,12 @@ export default function ContactPage() {
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
                 Mon - Sun: 9:00 AM - 8:00 PM
               </p>
-              <a href="tel:+919990366338" className="text-gold font-semibold hover:underline">
+              <a
+                href="https://wa.me/919990366338"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold font-semibold hover:underline"
+              >
                 +91 9990366338
               </a>
             </div>
