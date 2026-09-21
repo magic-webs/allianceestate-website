@@ -30,7 +30,7 @@ const slides = [
       </>
     ),
     sub: 'Location insights, documentation and property information to help you make informed land decisions.',
-    link: '/projects/govt-acquisition-land',
+    link: '/projects/yeida-acquisition-land',
   },
   {
     image: '/yamuna-exp-02.png',
@@ -43,10 +43,10 @@ const slides = [
       </>
     ),
     sub: 'Explore property opportunities across one of Uttar Pradesh major planned development corridors.',
-    link: '/projects/rera/yamuna-expressway',
+    link: '/projects/rera',
   },
   {
-    image: '/Abadi-16-9.png',
+    image: '/Abadi land.png',
     eyebrow: 'ABADI LAND',
     heading: (
       <>

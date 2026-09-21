@@ -48,24 +48,71 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Stats Section */}
-        <section className="py-12 bg-slate-800/50 border-y border-white/5">
-          <div className="mx-auto max-w-page px-4 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-5xl font-bold text-gold mb-2 font-heading">15+</div>
-              <div className="text-sm text-slate-400">Years of Expertise</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-5xl font-bold text-gold mb-2 font-heading">2500+</div>
-              <div className="text-sm text-slate-400">Satisfied Investors</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-5xl font-bold text-gold mb-2 font-heading">₹500Cr+</div>
-              <div className="text-sm text-slate-400">Assets Managed</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-5xl font-bold text-gold mb-2 font-heading">100%</div>
-              <div className="text-sm text-slate-400">Clean & Verified Titles</div>
+        {/* Trust & Verification Badges */}
+        <section className="py-8 bg-slate-900/90 border-y border-white/10 md:py-10">
+          <div className="mx-auto max-w-page px-4 md:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 md:gap-y-0">
+              
+              {/* Legally Verified */}
+              <div className="flex flex-col items-center justify-center text-center px-3 md:px-4 border-r border-white/10">
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-gold/40 flex items-center justify-center bg-gold/5 text-gold mb-3 shadow-[0_0_15px_rgba(201,162,39,0.12)]">
+                  <svg className="w-7 h-7 md:w-8 md:h-8 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+                    <path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+                    <path d="M7 21h10" />
+                    <path d="M12 3v18" />
+                    <path d="M3 7h18" />
+                  </svg>
+                </div>
+                <div className="text-sm md:text-base text-slate-300 font-light">
+                  Legally <span className="font-bold text-white">Verified</span>
+                </div>
+              </div>
+
+              {/* Title Transparency */}
+              <div className="flex flex-col items-center justify-center text-center px-3 md:px-4 md:border-r md:border-white/10">
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-gold/40 flex items-center justify-center bg-gold/5 text-gold mb-3 shadow-[0_0_15px_rgba(201,162,39,0.12)]">
+                  <svg className="w-7 h-7 md:w-8 md:h-8 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </div>
+                <div className="text-sm md:text-base text-slate-300 font-light">
+                  Title <span className="font-bold text-white">Transparency</span>
+                </div>
+              </div>
+
+              {/* Documented Process */}
+              <div className="flex flex-col items-center justify-center text-center px-3 md:px-4 border-r border-white/10">
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-gold/40 flex items-center justify-center bg-gold/5 text-gold mb-3 shadow-[0_0_15px_rgba(201,162,39,0.12)]">
+                  <svg className="w-7 h-7 md:w-8 md:h-8 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="9" y1="12" x2="15" y2="12" />
+                    <line x1="9" y1="16" x2="13" y2="16" />
+                    <path d="m15 16 1.5 1.5 3-3" />
+                  </svg>
+                </div>
+                <div className="text-sm md:text-base text-slate-300 font-light">
+                  Documented <span className="font-bold text-white">Process</span>
+                </div>
+              </div>
+
+              {/* Customer Trust */}
+              <div className="flex flex-col items-center justify-center text-center px-3 md:px-4">
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-gold/40 flex items-center justify-center bg-gold/5 text-gold mb-3 shadow-[0_0_15px_rgba(201,162,39,0.12)]">
+                  <svg className="w-7 h-7 md:w-8 md:h-8 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.6-4.6a2 2 0 0 0 0-2.8l-1.4-1.4a2 2 0 0 0-2.8 0L13 12" />
+                    <path d="m13 12-2.5-2.5a2 2 0 0 0-2.8 0l-1.4 1.4a2 2 0 0 0 0 2.8l4.6 4.6a1 1 0 0 0 1.4 0l1.7-1.7" />
+                    <path d="M2 13.5V9a2 2 0 0 1 2-2h3" />
+                    <path d="M22 13.5V9a2 2 0 0 0-2-2h-3" />
+                  </svg>
+                </div>
+                <div className="text-sm md:text-base text-slate-300 font-light">
+                  Customer <span className="font-bold text-white">Trust</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>

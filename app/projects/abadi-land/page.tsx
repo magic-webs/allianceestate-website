@@ -16,7 +16,7 @@ export default function AbadiLandPage() {
         <section className="relative px-4 pt-24 pb-12 md:pt-36 md:pb-24 bg-gradient-to-b from-primary via-slate-900 to-slate-900 overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="/Abadi-16-9.png"
+              src="/Abadi land.png"
               alt="Abadi Land Background"
               fill
               className="object-cover"
@@ -28,7 +28,7 @@ export default function AbadiLandPage() {
               <span>Verified Title Land</span>
             </div>
             <h1 className="text-[1.9rem] sm:text-[2.5rem] md:text-6xl font-bold font-heading mb-4 text-white leading-tight">
-              Abadi &amp; Extended Abadi Land Parcels
+              Abadi Land
             </h1>
             <p className="max-w-3xl text-base text-slate-300 font-light leading-relaxed mb-6 md:text-lg md:mb-8">
               Verified Abadi land plots with clean revenue records, hassle-free mutation (Khatauni), and high capital appreciation potential across expanding urban hubs.
@@ -54,26 +54,26 @@ export default function AbadiLandPage() {
           <div className="mx-auto max-w-page grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative h-[240px] sm:h-[300px] md:h-[380px] rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
               <Image
-                src="/Abadi-16-9.png"
+                src="/Abadi land.png"
                 alt="Abadi Land"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Why Invest in Abadi Land?</h2>
+              <h2 className="text-2xl font-bold text-white mb-5 sm:text-3xl sm:mb-6">Why Invest in Abadi Land?</h2>
               <div className="space-y-4">
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
-                  <h3 className="font-bold text-gold text-lg mb-1">📜 Clean Revenue Records &amp; Mutation</h3>
-                  <p className="text-slate-300 text-sm">Every parcel undergoes thorough legal scrutiny, Khatauni verification, and boundary demarcation.</p>
+                  <h3 className="font-bold text-gold text-base sm:text-lg mb-1">📜 Clean Revenue Records &amp; Mutation</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">Every parcel undergoes thorough legal scrutiny, Khatauni verification, and boundary demarcation.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
-                  <h3 className="font-bold text-gold text-lg mb-1">💰 Multi-Fold Capital Growth</h3>
-                  <p className="text-slate-300 text-sm">Abadi land located along upcoming masterplan sectors enjoys explosive value appreciation when urban expansion arrives.</p>
+                  <h3 className="font-bold text-gold text-base sm:text-lg mb-1">💰 Multi-Fold Capital Growth</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">Abadi land located along upcoming masterplan sectors enjoys explosive value appreciation when urban expansion arrives.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
-                  <h3 className="font-bold text-gold text-lg mb-1">🏗️ Flexible Usage &amp; Immediate Possession</h3>
-                  <p className="text-slate-300 text-sm">Suitable for residential construction, warehousing, farmhouses, or long-term land banking.</p>
+                  <h3 className="font-bold text-gold text-base sm:text-lg mb-1">🏗️ Flexible Usage &amp; Immediate Possession</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">Suitable for residential construction, warehousing, farmhouses, or long-term land banking.</p>
                 </div>
               </div>
             </div>

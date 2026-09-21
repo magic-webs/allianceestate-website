@@ -29,14 +29,13 @@ const subMenuItems: SubMenuItem[] = [
     label: 'RERA Projects',
     href: '/projects/rera',
     children: [
-      { label: 'Yamuna Expressway', href: '/projects/rera/yamuna-expressway' },
       { label: 'Gaur Yamuna City', href: '/projects/rera/gaur-yamuna-city' },
       { label: 'ACE', href: '/projects/rera/ace' },
       { label: 'ATS', href: '/projects/rera/ats' },
     ],
   },
   { label: 'Abadi Land', href: '/projects/abadi-land' },
-  { label: 'Government Acquisition Land', href: '/projects/govt-acquisition-land' },
+  { label: 'YEIDA Acquisition Land', href: '/projects/yeida-acquisition-land' },
 ];
 
 /* Underline-on-hover treatment shared by the links and the dropdown trigger. */

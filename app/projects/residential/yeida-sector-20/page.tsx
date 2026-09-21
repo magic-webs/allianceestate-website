@@ -44,9 +44,14 @@ export default function Sector20Page() {
               >
                 Request Price List
               </a>
-              <Link href="/projects/residential" className={btnSecondary}>
-                Back to Residential Plots
-              </Link>
+              <a
+                href="https://drive.google.com/drive/folders/1tNk3G-8zgIeYSVPUOiBK3GsMKUhGah-A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={btnSecondary}
+              >
+                All Residential Section Layout
+              </a>
             </div>
           </div>
         </section>

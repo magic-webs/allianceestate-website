@@ -8,23 +8,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const slideData = [
   {
-    title: 'Abadi Land',
-    description: 'Explore land opportunities located within or around established abadi areas, subject to applicable revenue records, land-use provisions and local regulations.',
-    image: '/abadi-land-02.png',
-    tagPrimary: 'Abadi Land',
-    tagSecondary: '',
-    link: '/projects/abadi-land',
-  },
-  {
-    title: 'Government Acquisition Land',
+    title: 'YEIDA Acquisition Land',
     description: 'Certain land parcels may be located in areas identified for planned infrastructure, urban expansion or potential acquisition.',
     image: '/land-equisition-02.png',
-    tagPrimary: 'Government Acquisition Land',
+    tagPrimary: 'YEIDA Acquisition Land',
     tagSecondary: '',
-    link: '/projects/govt-acquisition-land',
+    link: '/projects/yeida-acquisition-land',
   },
   {
-    title: 'Residential Plots',
+    title: 'Residential YEIDA Authority Plots',
     description: 'Discover residential plots in strategically located areas suitable for future home construction and long-term land ownership.',
     image: '/Residential-plots.png',
     tagPrimary: 'Residential Plots',
@@ -32,12 +24,20 @@ const slideData = [
     link: '/projects/residential',
   },
   {
-    title: 'RERA Projects',
+    title: 'YEIDA Approved Projects',
     description: 'Explore registered residential projects with greater transparency around project details, approvals and development status.',
     image: '/Rera-01.png',
     tagPrimary: 'RERA Projects',
     tagSecondary: '',
     link: '/projects/rera',
+  },
+  {
+    title: 'Abadi Land',
+    description: 'Explore land opportunities located within or around established abadi areas, subject to applicable revenue records, land-use provisions and local regulations.',
+    image: '/Abadi land.png',
+    tagPrimary: 'Abadi Land',
+    tagSecondary: '',
+    link: '/projects/abadi-land',
   },
 ];
 

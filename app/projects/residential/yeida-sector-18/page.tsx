@@ -44,9 +44,14 @@ export default function Sector18Page() {
               >
                 Inquire Plot Rates
               </a>
-              <Link href="/projects/residential" className={btnSecondary}>
-                Back to Residential Plots
-              </Link>
+              <a
+                href="https://drive.google.com/drive/folders/1tNk3G-8zgIeYSVPUOiBK3GsMKUhGah-A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={btnSecondary}
+              >
+                All Residential Section Layout
+              </a>
             </div>
           </div>
         </section>
@@ -63,19 +68,19 @@ export default function Sector18Page() {
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Sector 18 Location Advantages</h2>
+              <h2 className="text-2xl font-bold text-white mb-5 sm:text-3xl sm:mb-6">YEIDA Sector 18 Location Advantages</h2>
               <div className="space-y-4">
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
-                  <h3 className="font-bold text-gold text-lg mb-1">🚆 Metro &amp; Transit Hub</h3>
-                  <p className="text-slate-300 text-sm">Direct Blue Line Metro station in the sector with seamless connectivity to Delhi CP and South Noida.</p>
+                  <h3 className="font-bold text-gold text-base sm:text-lg mb-1">🛣️ Yamuna Expressway Connectivity</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">Excellent road connectivity through the Yamuna Expressway and the wider NCR network.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
-                  <h3 className="font-bold text-gold text-lg mb-1">🛍️ High Street Shopping &amp; Malls</h3>
-                  <p className="text-slate-300 text-sm">Adjacent to DLF Mall of India, Gardens Galleria, and Great India Place.</p>
+                  <h3 className="font-bold text-gold text-base sm:text-lg mb-1">✈️ Noida International Airport</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">Part of the rapidly developing corridor around the upcoming Noida International Airport at Jewar.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800/60 border border-gold/20">
-                  <h3 className="font-bold text-gold text-lg mb-1">📈 Guaranteed Rental Returns</h3>
-                  <p className="text-slate-300 text-sm">Highest rental yields in Noida driven by corporate offices and luxury retail space.</p>
+                  <h3 className="font-bold text-gold text-base sm:text-lg mb-1">🎬 Film City &amp; Future Growth</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">Close to major planned developments including Film City, logistics and emerging commercial infrastructure.</p>
                 </div>
               </div>
             </div>

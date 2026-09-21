@@ -15,8 +15,18 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://allianceestateltd.com"),
   title: "Alliance Estate | Premium Real Estate Investment",
   description: "Identify high-growth property opportunities with strategic locations, market intelligence, and end-to-end investment assistance.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", type: "image/png" },
+    ],
+  },
 };
 
 import SmoothScroll from "../components/SmoothScroll";

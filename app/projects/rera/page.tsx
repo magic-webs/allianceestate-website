@@ -9,15 +9,6 @@ import { btnPrimary } from '../../../components/buttons';
 
 const reraProjects = [
   {
-    name: 'Yamuna Expressway',
-    slug: '/projects/rera/yamuna-expressway',
-    image: '/yamuna-exp-02.png',
-    badge: 'Jewar Airport Zone',
-    desc: 'High-yield RERA registered plots & townships along the upcoming Noida International Airport corridor.',
-    reraId: 'UPRERAPRJ15482',
-    highlights: ['Near Jewar Airport', 'Film City Proximity', 'Olympic Park Precinct'],
-  },
-  {
     name: 'Gaur Yamuna City',
     slug: '/projects/rera/gaur-yamuna-city',
     image: '/Gaur-yamuna-city.png',

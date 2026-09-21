@@ -164,7 +164,7 @@ const ContactSection = () => {
                   </div>
                   <div className="flex items-start gap-2.5 text-[0.87rem] leading-[1.5] text-slate-200">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--color-gold)" stroke="none"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
-                    <a href="mailto:contact@allianceestate.com" className="hover:text-gold transition-colors">contact@allianceestate.com</a>
+                    <a href="mailto:contact@allianceestateltd.com" className="hover:text-gold transition-colors">contact@allianceestateltd.com</a>
                   </div>
                 </div>
               </div>

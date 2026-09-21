@@ -7,7 +7,7 @@
  * site — `${btnPrimary} w-full`, for example.
  */
 export const btnBase =
-  'inline-flex items-center justify-center rounded px-8 py-4 text-base font-semibold transition-all duration-400 ease-smooth';
+  'inline-flex items-center justify-center rounded px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-base font-semibold transition-all duration-400 ease-smooth text-center';
 
 export const btnPrimary = `${btnBase} bg-gold text-white hover:-translate-y-0.5 hover:bg-gold-light`;
 

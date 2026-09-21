@@ -64,7 +64,7 @@ const Footer = () => {
             <li><Link href="/projects/residential" className={footerLink}>Residential Plots</Link></li>
             <li><Link href="/projects/rera" className={footerLink}>RERA Projects</Link></li>
             <li><Link href="/projects/abadi-land" className={footerLink}>Abadi Land</Link></li>
-            <li><Link href="/projects/govt-acquisition-land" className={footerLink}>Government Acquisition Land</Link></li>
+            <li><Link href="/projects/yeida-acquisition-land" className={footerLink}>YEIDA Acquisition Land</Link></li>
           </ul>
         </div>
 
@@ -78,7 +78,11 @@ const Footer = () => {
                 +91 9990366338 (WhatsApp)
               </a>
             </li>
-            <li>contact@allianceestate.com</li>
+            <li>
+              <a href="mailto:contact@allianceestateltd.com" className="hover:text-gold transition-colors">
+                contact@allianceestateltd.com
+              </a>
+            </li>
             <li>
               <a
                 href="https://maps.app.goo.gl/gi2qrnJVssnxg5nA7"

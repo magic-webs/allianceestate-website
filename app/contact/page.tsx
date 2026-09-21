@@ -80,8 +80,8 @@ export default function ContactPage() {
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
                 For sales, title checks & partnerships
               </p>
-              <a href="mailto:contact@allianceestate.com" className="text-gold font-semibold hover:underline">
-                contact@allianceestate.com
+              <a href="mailto:contact@allianceestateltd.com" className="text-gold font-semibold hover:underline">
+                contact@allianceestateltd.com
               </a>
             </div>
           </div>
