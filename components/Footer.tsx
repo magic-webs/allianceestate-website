@@ -24,7 +24,9 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61589046352456#"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 bg-white text-slate-700 transition-all duration-300 hover:border-gold hover:bg-gold/10 hover:text-gold shadow-sm"
             >
@@ -33,7 +35,9 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/alliance_estate_"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 bg-white text-slate-700 transition-all duration-300 hover:border-gold hover:bg-gold/10 hover:text-gold shadow-sm"
             >
@@ -52,6 +56,7 @@ const Footer = () => {
           </h4>
           <ul className="flex flex-col gap-4">
             <li><Link href="/about" className={footerLink}>About Us</Link></li>
+            <li><Link href="/careers" className={footerLink}>Careers</Link></li>
             <li><Link href="/contact" className={footerLink}>Contact Us</Link></li>
           </ul>
         </div>
