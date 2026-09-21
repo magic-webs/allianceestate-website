@@ -31,6 +31,7 @@ export const metadata: Metadata = {
 
 import SmoothScroll from "../components/SmoothScroll";
 import WhatsAppButton from "../components/WhatsAppButton";
+import MetaPixel from "../components/MetaPixel";
 
 export default function RootLayout({
   children,
@@ -43,6 +44,7 @@ export default function RootLayout({
       className={`${inter.variable} ${plusJakartaSans.variable}`}
     >
       <body>
+        <MetaPixel />
         <SmoothScroll>
           {children}
           <WhatsAppButton />

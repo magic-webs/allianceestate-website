@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import { trackLead } from '../../utils/pixel';
 
 const inputClass =
   'w-full rounded-[10px] border border-white/20 bg-slate-800/80 py-[0.8rem] pr-[0.9rem] pl-10 font-body text-[0.9rem] text-white outline-none transition-all duration-300 placeholder:text-slate-400 focus:border-gold focus:bg-slate-800 focus:shadow-[0_0_0_3px_rgba(201,162,39,0.2)]';
@@ -103,11 +104,25 @@ export default function CareersPage() {
         body: payload,
       });
 
+      // Fire Meta Pixel Lead event for career/partner application
+      trackLead({
+        formName: 'Career & Partner Application Form',
+        workType: typeLabel,
+        roleInterest: formData.roleInterest,
+        experience: formData.experience,
+      });
+
       setIsSubmitting(false);
       setIsSubmitted(true);
     } catch (err) {
       console.error('Webhook submission error:', err);
-      // Even if network CORS occurs, acknowledge submission or fallback gracefully
+      // Fire Meta Pixel Lead event even on fallback acknowledge
+      trackLead({
+        formName: 'Career & Partner Application Form',
+        workType: typeLabel,
+        roleInterest: formData.roleInterest,
+        experience: formData.experience,
+      });
       setIsSubmitting(false);
       setIsSubmitted(true);
     }

@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import { trackLead } from '../utils/pixel';
 
 const cardClass =
   'rounded-[20px] border border-white/20 bg-slate-900/85 p-8 shadow-2xl backdrop-blur-md';
@@ -29,6 +30,13 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Track Meta Pixel Lead event
+    trackLead({
+      formName: 'General Contact / Inquiry Form',
+      interest: formData.interest || 'General Inquiry',
+    });
+
     const parts = [
       'Hello Alliance Estate, I would like to make an inquiry:',
       `Name: ${formData.fullName}`,
