@@ -27,7 +27,7 @@ const slideData = [
     title: 'YEIDA Approved Projects',
     description: 'Explore registered residential projects with greater transparency around project details, approvals and development status.',
     image: '/Rera-01.png',
-    tagPrimary: 'RERA Projects',
+    tagPrimary: 'YEIDA Projects',
     tagSecondary: '',
     link: '/projects/rera',
   },
